@@ -195,6 +195,34 @@ section {
 		}
 	}
 
+	&.toolhead {
+		background: $grey40;
+		clear: both;
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background: $grey40;
+			float: right;
+			li {
+				float: left;
+				a {
+					display: block;
+					color: $white;
+					text-decoration: none;
+					padding: 5px 9px;
+					font-family: 'source_sans_probold';
+					text-transform: uppercase;
+					letter-spacing: -1px;
+					font-size: 18px;
+					&.icon {
+						font-family: 'source_code_probold';
+					}
+				}
+			}
+		}
+	}
+
 	&.medications {
 		a { text-decoration: none; }
 		.grid {
@@ -225,10 +253,17 @@ section {
 
 	&.bio {
 		color: $grey60;
+		margin-top: 0;
 		h1 {
+			font-weight: normal;
 			font-size: 48px;
 			font-family: 'source_sans_pro_extralight';
 			margin: 20px 0 0 0;
+			small {
+				font-family: 'source_sans_probold';
+				font-size: 20px;
+				color: $grey80;
+			}
 		}
 		p, address {
 			font-size: 18px;
