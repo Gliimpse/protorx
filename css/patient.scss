@@ -195,6 +195,24 @@ section {
 		}
 	}
 
+	&.labs {
+		.content {
+			background: $white;
+			padding: 0;
+			h3 {
+				padding: 15px;
+				padding-bottom: 20px;
+			}
+			.panel {
+				padding: 15px 0;
+			}
+
+		}
+
+					
+
+	}
+
 
 	&.updates {
 		background: $grey80;
@@ -260,6 +278,32 @@ section {
 
 .content {
 	background: $white;
+}
+
+.graph-horizontal {
+	width: 100%;
+	height: 12px;
+	position: relative;
+	.graph-horizontal-marker {
+		position: absolute;
+		top: 0;
+		background: url(../images/icn-marker.png) no-repeat;
+		width: 34px;
+		height: 34px;
+		top: -11px;
+	}
+}
+
+.graph-horizontal-fbs {
+	background: #9ac652;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzlhYzY1MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iIzlhYzY1MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iI2VjYTY1MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2VjYTY1MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU3JSIgc3RvcC1jb2xvcj0iI2Q5NDgzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOTQ4M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #9ac652 0%, #9ac652 32%, #eca650 35%, #eca650 55%, #d9483b 57%, #d9483b 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9ac652), color-stop(32%,#9ac652), color-stop(35%,#eca650), color-stop(55%,#eca650), color-stop(57%,#d9483b), color-stop(100%,#d9483b));
+	background: -webkit-linear-gradient(left,  #9ac652 0%,#9ac652 32%,#eca650 35%,#eca650 55%,#d9483b 57%,#d9483b 100%);
+	background: -o-linear-gradient(left,  #9ac652 0%,#9ac652 32%,#eca650 35%,#eca650 55%,#d9483b 57%,#d9483b 100%);
+	background: -ms-linear-gradient(left,  #9ac652 0%,#9ac652 32%,#eca650 35%,#eca650 55%,#d9483b 57%,#d9483b 100%);
+	background: linear-gradient(to right,  #9ac652 0%,#9ac652 32%,#eca650 35%,#eca650 55%,#d9483b 57%,#d9483b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ac652', endColorstr='#d9483b',GradientType=1 );
 }
 
 /****************************************************************
