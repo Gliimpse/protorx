@@ -135,7 +135,7 @@ section {
 					&:hover {
 						background: $grey40;
 					}
-					&:activated {
+					&.active {
 						background: $blueSubdued;
 					}
 				}
@@ -203,7 +203,8 @@ section {
 			background: $white;
 			padding: 0;
 			margin-bottom: 24px;
-			&:hover h3 {
+			&:hover h3,
+			&.open h3 {
 				background: $blueSubdued;
 				color: $white;
 				small {
@@ -311,6 +312,7 @@ section {
 		color: $white;
 		h2 {
 			font-size: 1.3em;
+			font-family: 'SourceSansPro';
 		}
 	}
 	&.alert .panel {
@@ -326,6 +328,20 @@ section {
 	width: 100%;
 	height: 12px;
 	position: relative;
+	.graph-horizontal-previous {
+		display: block;
+		width: 12px;
+		height: 11px;
+		background: url(../images/sprite-previous.png) no-repeat;
+		float: left;
+		position: absolute;
+		&.graph-horizontal-previous-2 {
+			background-position: left -111px;
+		}
+		&.graph-horizontal-previous-3 {
+			background-position: left -222px;
+		}
+	}
 	.graph-horizontal-marker {
 		position: absolute;
 		top: 0;
@@ -341,6 +357,27 @@ section {
 			font-size: 1.5em;
 			padding-left: 7px;
 			display: none;
+		}
+	}
+	.graph-horizontal-labels {
+		display: none;
+		position: absolute;
+		top: -18px;
+		width: 100%;
+		ul {
+			list-style-type: none;
+			li {
+				float: left;
+				display: block;
+				padding-left: 5px;
+				line-height: 1em;
+				font-size: 1em;
+				padding: 10px;
+				border-right: 1px dotted $grey80;
+				&:last-child {
+					border-right: none;
+				}
+			}
 		}
 	}
 }

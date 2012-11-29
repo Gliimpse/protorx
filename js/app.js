@@ -1,5 +1,7 @@
 (function() {
 
+	$('.graph-horizontal-labels').hide();
+
 	$("#js-tour-page").click(function() {
 		$('#joyRideContent').joyride({});
 	});
@@ -13,20 +15,28 @@
 	});
 
 
+	// Expand and collapse lab results
 	$('.lab-result.closed').live(
 		'click', function() {
 			$(this).removeClass('closed').addClass('open');
 			$(this).children('.row').slideDown();
 			$(this).find('.graph-result-label').css('display', 'block');
+			$(this).find('.graph-horizontal-labels').show();
+			var horizontalLabelHeight = $('.graph-horizontal-labels').height();
+			$(this).find('.graph-horizontal').css('margin-top', horizontalLabelHeight + 'px');
+			$(this).find('.graph-horizontal-labels').css('top', '-' + horizontalLabelHeight + 'px');
+			$(this).find('.graph-horizontal-labels li').syncHeight();
+
 		}
 	);
-
 
 	$('.lab-result.open').live(
 		'click', function() {
 			$(this).removeClass('open').addClass('closed');
 			$(this).children('.row').slideUp();
 			$(this).find('.graph-result-label').css('display', 'none');
+			$(this).find('.graph-horizontal-labels').hide();
+			$(this).find('.graph-horizontal').css('margin-top', '0');
 		}
 	);
 
