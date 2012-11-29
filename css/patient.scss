@@ -32,7 +32,8 @@ $nominalOn:		#A2DD3A;
 
 body {
 	background: $grey95;
-	font-family: 'source_sans_proregular', Helvetica, Arial, Tahoma, sans-serif;
+	font-family: 'SourceSansPro', Helvetica, Arial, Tahoma, sans-serif;
+	font-weight: 400;
 	color: $grey60; 
 }
 
@@ -82,7 +83,8 @@ address {
     border: 2px solid #666;
     color: $white;
     text-align: center;
-    font-family: 'source_sans_probold';
+    font-family: 'SourceSansPro';
+    font-weight: 700;
 }
 
 .alert {
@@ -144,7 +146,8 @@ section {
 	/* 01 NAME */
 	&.name {
 		h1 {
-			font-family: 'source_sans_pro_extralight';
+    		font-family: 'SourceSansPro';
+			font-weight: 100;
 			color: $grey60;
 		}
 	}
@@ -211,7 +214,8 @@ section {
 				padding: 15px;
 				font-weight: normal;
 				padding-bottom: 20px;
-				font-family: 'source_sans_pro_lightregular';
+    			font-family: 'SourceSansPro';
+				font-weight: 200;
 				small {
 					color: $grey60;
 					padding-left: 5px;
@@ -224,7 +228,8 @@ section {
 					padding: 7px 15px;
 				}
 				h4 {
-					font-family: 'source_sans_probold';
+    				font-family: 'SourceSansPro';
+					font-weight: 700;
 					font-size: 1.25em;
 					font-weight: normal;
 				}
@@ -260,7 +265,8 @@ section {
  CONTENT STYLES */
 
 .listing {
-	font-family: 'source_sans_pro_semiboldRg';
+    font-family: 'SourceSansPro';
+	font-weight: 600;
 	ul {
 		list-style-type: none;
 		margin: 15px 0;
@@ -292,7 +298,8 @@ section {
 		padding: 5px;
 	}
 	small {
-		font-family: 'source_sans_proregular';
+    	font-family: 'SourceSansPro';
+		font-weight: 400;
 		font-size: 15px;
 		color: $grey40;
 	}
