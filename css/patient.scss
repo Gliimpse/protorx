@@ -120,6 +120,10 @@ a {
 	color: $blueSubdued;
 }
 
+address {
+	font-style: normal;
+}
+
 .severity {
 	width: 21px;
 	height: 21px;
@@ -221,6 +225,18 @@ section {
 
 	&.bio {
 		color: $grey60;
+		h1 {
+			font-size: 48px;
+			font-family: 'source_sans_pro_extralight';
+			margin: 20px 0 0 0;
+		}
+		p, address {
+			font-size: 18px;
+			margin: 0;
+			margin-top: 5px;
+			padding-bottom: 5px;
+			color: $grey80;
+		}
 	}
 
 	&.updates {
