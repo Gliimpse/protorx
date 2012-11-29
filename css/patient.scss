@@ -155,6 +155,24 @@ section {
 			min-height: 127px;
 			background: $white;
 		}
+		.patient-contact {
+			address, p {
+				font-size: 1.3em;
+				line-height: 1.2em;
+			}
+			address {
+				margin-bottom: 0.5em;
+			}
+		}
+		.patient-proprietary {
+			.barcode {
+				margin: 15px 0;
+			}
+			p {
+				font-size: 1.3em;
+				line-height: 1.2em;
+			}
+		}
 	}
 
 	/* 03 ALLERGIES */
@@ -258,5 +276,22 @@ section {
 	}
 	.columns {
 		border: 1px solid #aaa;
+	}
+}
+
+/****************************************************************
+ LEGACY BROWSER WARNING */
+
+.chromeframe {
+	width: 100%;
+	padding: 10px;
+	background: $alertOn;
+	text-align: center;
+	color: $white;
+	position: fixed;
+	bottom: 0;
+	a {
+		color: $white;
+		text-decoration: underline;
 	}
 }
