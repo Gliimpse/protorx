@@ -90,6 +90,7 @@ section:after { clear: both; }
 .text-center { text-align: center; }
 .hide { display: none !important; }
 .highlight { background: #ffff99; }
+.ir { text-indent: -9999px; }
 
 /****************************************************************
  GLOBAL + BASE STYLES */
@@ -99,7 +100,18 @@ a {
 }
 
 .severity {
+	width: 21px;
+	height: 21px;
+	text-indent: -9999px;
+	display: inline-block;
+	margin-right: 5px;
+	&.severity-severe {
+		background: url(../images/icn-attention.png) no-repeat;
+	}
+}
 
+.alert {
+	color: $alertOff;
 }
 
 /****************************************************************
@@ -107,13 +119,24 @@ a {
 
 section {
 
+	.listing {
+		font-size: 22px;
+		font-family: 'source_sans_pro_semiboldRg';
+		p {
+			padding: 5px;
+		}
+		small {
+			font-family: 'source_sans_proregular';
+			font-size: 15px;
+			color: $grey40;
+		}
+	}
+
 
 	.headline {
 		background: $alertOff;
 		color: $white;
 	}
-
-	.listing {}
 
 
 
