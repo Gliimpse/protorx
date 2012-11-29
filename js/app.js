@@ -14,6 +14,17 @@
 		$('body').addClass('high-contrast');
 	});
 
+	// Show fixed nav bar
+	$(window).scroll(function() {
+		var scrollPos = $(window).scrollTop();
+		if (scrollPos > 250) {
+			$('.fixed-header').fadeIn();
+		}
+		else {
+			$('.fixed-header').hide();
+		}
+	});
+
 
 	// Expand and collapse lab results
 	$('.lab-result.closed').live(
