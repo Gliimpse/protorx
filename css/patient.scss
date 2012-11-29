@@ -2,6 +2,7 @@
 @import 'fonts.scss';
 
 /* Base Colors */
+$grey95:		#F3F3F3;
 $grey90: 		#e6e6e6;
 $grey80: 		#cccccc;
 $white:			#ffffff;
@@ -30,7 +31,7 @@ $blueSubdued:	#008DC9;
 html { font-size: 62.5%; }
 
 body {
-	background: $grey90;
+	background: $grey95;
 	font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	font-style: normal; 
@@ -46,9 +47,10 @@ body {
 
 section, .row {
 	background: $white;
-	width: 940px; 
+	/*width: 940px; */
+	width: 95%;
 	max-width: 100%; 
-	min-width: 768px; 
+	/*min-width: 768px;*/ 
 	margin: 0 auto; 
 	margin-top: 30px;
 }
@@ -58,6 +60,18 @@ section .row {
 	max-width: none; 
 	min-width: 0;
 	margin: 0 -15px;
+}
+
+
+@media only screen and (max-width: 959px) {
+	.headline {
+		clear: both;
+		width: 100% !important;
+	}
+	.content {
+		clear: both;
+		width: 100% !important;
+	}
 }
 
 section { *zoom: 1; }
@@ -192,6 +206,15 @@ section {
 		background: $grey40;
 		color: $white;
 		// letter-spacing: -1px;
+		&:before {
+		    content: '';
+		    position: absolute;
+		    bottom: 0; 
+		    right: 0;
+		    border-top: 10px solid $grey40;
+		    border-right: 10px solid $white;
+		    width: 0;
+		}
 	}
 
 
