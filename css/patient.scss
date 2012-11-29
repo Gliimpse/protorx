@@ -44,13 +44,20 @@ body {
 /****************************************************************
  GRID CONFIGURATION */
 
-section {
+section, .row {
 	background: $white;
 	width: 940px; 
 	max-width: 100%; 
 	min-width: 768px; 
 	margin: 0 auto; 
 	margin-top: 30px;
+}
+
+section .row {
+	width: auto;
+	max-width: none; 
+	min-width: 0;
+	margin: 0 -15px;
 }
 
 section { *zoom: 1; }
@@ -110,8 +117,26 @@ a {
 	}
 }
 
+.number-circle {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    width: 36px;
+    height: 36px;
+    padding: 3px 7px;
+    background: $grey40;
+    border: 2px solid #666;
+    color: $white;
+    text-align: center;
+    font-family: 'source_sans_probold';
+}
+
 .alert {
 	color: $alertOff;
+}
+
+.warn {
+	color: $warnOff;
 }
 
 /****************************************************************
@@ -120,6 +145,26 @@ a {
 section {
 
 	.listing {
+		ul {
+			list-style-type: none;
+			margin: 15px 0;
+			padding: 0;
+			li {
+				margin-left: 0;
+				padding-left: 0;
+				a {
+					color: inherit;
+					display: block;
+					border-radius: 5px;
+					text-decoration: none;
+					padding: 10px;
+					//border-bottom: 1px solid $grey90;
+					&:hover {
+						background: #fafafa;
+					}
+				}
+			}
+		}
 		font-size: 22px;
 		font-family: 'source_sans_pro_semiboldRg';
 		p {
@@ -132,10 +177,21 @@ section {
 		}
 	}
 
+	&.medications {
+		a { text-decoration: none; }
+		.grid {
+			margin: 15px 0;
+			.column {
+				background: $grey90;
+			}
+		}
+	}
+
 
 	.headline {
-		background: $alertOff;
+		background: $grey40;
 		color: $white;
+		// letter-spacing: -1px;
 	}
 
 
