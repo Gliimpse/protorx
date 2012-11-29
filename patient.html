@@ -19,22 +19,27 @@
     <![endif]-->
 
     <!-- 00 TOOLHEAD -->
-    <section class="row toolhead">
-        <ul>
-            <li>
-                <a href="#" title="Switch to High Contrast View" id="js-high-contrast"></a>
-            </li>
-            <li>
-                <a href="#" title="Zoom In" class="icon" id="js-zoom-in"></a>
-            </li>
-        </ul>
+    <section class="toolhead">
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="#" title="Take a Tour of protoRx" id="js-tour-page"></a>
+                </li>
+                <li id="access-links">
+                    <a href="#" title="Switch to High Contrast View" id="js-high-contrast"></a>
+                </li>
+                <li>
+                    <a href="#" title="Zoom In" class="icon" id="js-zoom-in"></a>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- 01 NAME -->
     <section class="name">
         <div class="row">
             <div class="twelve columns">
-                <h1>Lucielle Désirée Ball</h1>
+                <h1 id="patient-name">Lucielle Désirée Ball</h1>
             </div>
         </div>
     </section>
@@ -51,7 +56,7 @@
                     <p>503-235-2666</p>
                 </div>
             </div>
-            <div class="three columns">
+            <div class="three columns" id="patient-bio">
                 <div class="panel">
                     <img src="images/fpo-barcode.png" alt="Barcode" class="barcode" />
                     <p>JTTO331613</p>
@@ -59,7 +64,7 @@
                 </div>
             </div>
             <div class="two columns">
-                <div class="panel">
+                <div class="panel" id="health-boxes">
                     tile
                 </div>
             </div>
@@ -144,6 +149,24 @@ Prescription Number: 2718960 -->
         </div>
 
     </section>
+
+    <ol id="joyRideContent" style="display:none">
+        <li data-id="patient-name" data-button="Next">
+            <p>The patient's name is large and easy to read.</p>
+        </li>
+        <li data-id="patient-bio" data-button="Next">
+            <p>Patient demographics, contact information, and room for proprietary provider information.</p>
+        </li>
+        <li data-id="health-boxes" data-button="Next">
+            <p>The most relevant information for the viewer is shown.  Doctors see high-level health information, patients see their next steps to maintain health, or EMTs see blood type, condition codes or DNR order.</p>
+        </li>
+        <li data-id="access-links" data-button="Next">
+            <p>Accessibility links use simple iconography to allow users to change languages, swap to a high-contrast layout, or zoom to make the text bigger.</p>
+        </li>
+        <li data-id="allergies" data-button="Next">
+            <p>The patient's allergies are shown near the top of the page to alert medical staff and remind the patient to review those allergens for accuracy every time they see their record. Clicking on an allergy will navigate the user to the associated provider encounter.</p>
+        </li>
+    </ol>
 
 
 

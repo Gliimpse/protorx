@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 @import 'normalize.css';
 @import 'foundation.css';
+@import 'joyride.css';
 
 /* Base Colors */
 $blueSubdued:	#008DC9;
@@ -107,7 +108,7 @@ section {
 	&.toolhead {
 		position: absolute;
 		width: 100%;
-		top: -53px;
+		top: -80px;
 		z-index: 9999;
 		ul {
 			list-style-type: none;

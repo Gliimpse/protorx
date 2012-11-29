@@ -1,5 +1,9 @@
 (function() {
 
+	$("#js-tour-page").click(function() {
+		$('#joyRideContent').joyride({});
+	});
+
 	$('#js-zoom-in').click(function() {
 		$('body').css('font-size', '200%');
 	});
