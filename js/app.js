@@ -8,4 +8,11 @@
 		$('body').addClass('high-contrast');
 	});
 
+	// Sync Heights of Columns
+	// @TODO window resize
+	$('.allergies .headline .panel, .allergies .content').syncHeight();
+	// $(window).resize(function(){
+	// $('p').syncHeight();
+	// });
+
 }());
