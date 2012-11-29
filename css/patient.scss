@@ -200,8 +200,16 @@ section {
 			background: $white;
 			padding: 0;
 			margin-bottom: 24px;
+			&:hover h3 {
+				background: $blueSubdued;
+				color: $white;
+				small {
+					color: $white;
+				}
+			}
 			h3 {
 				padding: 15px;
+				font-weight: normal;
 				padding-bottom: 20px;
 				font-family: 'source_sans_pro_lightregular';
 				small {
@@ -210,6 +218,7 @@ section {
 				}
 			}
 			.row {
+				display: none;
 				&:last-child { padding-bottom: 15px; }
 				.panel {
 					padding: 7px 15px;
@@ -228,6 +237,11 @@ section {
 
 		.graph-horizontal + .row {
 			margin-top: 45px;
+		}
+
+		.lab-result.closed,
+		.lab-result.open {
+			cursor: pointer;
 		}
 
 					
@@ -319,6 +333,7 @@ section {
 			top: 38px;
 			font-size: 1.5em;
 			padding-left: 7px;
+			display: none;
 		}
 	}
 }

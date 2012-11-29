@@ -12,6 +12,24 @@
 		$('body').addClass('high-contrast');
 	});
 
+
+	$('.lab-result.closed').live(
+		'click', function() {
+			$(this).removeClass('closed').addClass('open');
+			$(this).children('.row').slideDown();
+			$(this).find('.graph-result-label').css('display', 'block');
+		}
+	);
+
+
+	$('.lab-result.open').live(
+		'click', function() {
+			$(this).removeClass('open').addClass('closed');
+			$(this).children('.row').slideUp();
+			$(this).find('.graph-result-label').css('display', 'none');
+		}
+	);
+
 	// Sync Heights of Columns
 	// @TODO window resize
 	$('.allergies .headline .panel, .allergies .listing').syncHeight();
