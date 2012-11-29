@@ -119,8 +119,16 @@ address {
 	}
 	ul {
 		list-style-type: none;
+		float: right;
+		margin-bottom: 0;
 		li {
 			float: left;
+			line-height: 38px;
+			padding-left: 13px;
+			a {
+				color: $white;
+
+			}
 		}
 	}
 }
