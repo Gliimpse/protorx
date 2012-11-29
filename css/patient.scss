@@ -203,7 +203,31 @@ section {
 			h3 {
 				padding: 15px;
 				padding-bottom: 20px;
+				font-family: 'source_sans_pro_lightregular';
+				small {
+					color: $grey60;
+					padding-left: 5px;
+				}
 			}
+			.row {
+				&:last-child { padding-bottom: 15px; }
+				.panel {
+					padding: 7px 15px;
+				}
+				h4 {
+					font-family: 'source_sans_probold';
+					font-size: 1.25em;
+					font-weight: normal;
+				}
+				p {
+					font-size: 1.1em;
+					line-height: 1.3em;
+				}
+			}
+		}
+
+		.graph-horizontal + .row {
+			margin-top: 45px;
 		}
 
 					
@@ -288,6 +312,14 @@ section {
 		width: 34px;
 		height: 34px;
 		top: -11px;
+		span {
+			width: 100px;
+			position: relative;
+			display: block;
+			top: 38px;
+			font-size: 1.5em;
+			padding-left: 7px;
+		}
 	}
 }
 
