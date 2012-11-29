@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import 'foundation.css';
 @import 'fonts.scss';
 
 /* Base Colors */
@@ -28,92 +29,11 @@ $blueSubdued:	#008DC9;
 /****************************************************************
  PAGE SETUP */
 
-*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-html { font-size: 62.5%; }
-
 body {
 	background: $grey95;
 	font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	font-style: normal; 
-	font-size: 14px; 
-	line-height: 1; 
 	color: $grey60; 
-	position: relative; 
-	-webkit-font-smoothing: antialiased; 
 }
-
-/****************************************************************
- GRID CONFIGURATION */
-
-section, .row {
-	background: $white;
-	/*width: 940px; */
-	width: 95%;
-	max-width: 100%; 
-	/*min-width: 768px;*/ 
-	margin: 0 auto; 
-	margin-top: 30px;
-}
-
-section .row {
-	width: auto;
-	max-width: none; 
-	min-width: 0;
-	margin: 0 -15px;
-}
-
-
-@media only screen and (max-width: 959px) {
-	.headline {
-		clear: both;
-		width: 100% !important;
-	}
-	.content {
-		clear: both;
-		width: 100% !important;
-	}
-}
-
-section { *zoom: 1; }
-section:before, section:after { content: " "; display: table; }
-section:after { clear: both; }
-
-.column {
-	float: left;
-	padding: 0 15px;
-	position: relative;
-	min-height: 1px;
-}
-
-[class*="column"] + [class*="column"]:last-child { float: right; }
-[class*="column"] + [class*="column"].end { float: left; }
-
-.one { width: 8.33333%; }
-.two { width: 16.66667%; }
-.three { width: 25%; }
-.four { width: 33.33333%; }
-.five { width: 41.66667%; }
-.six { width: 50%; }
-.seven { width: 58.33333%; }
-.eight { width: 66.66667%; }
-.nine { width: 75%; }
-.ten { width: 83.33333%; }
-.eleven { width: 91.66667%; }
-.twelve { width: 100%; }
-
-/****************************************************************
- HELPERS */
-
-.left { float: left; }
-.right { float: right; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.hide { display: none !important; }
-.highlight { background: #ffff99; }
-.ir { text-indent: -9999px; }
 
 /****************************************************************
  GLOBAL + BASE STYLES */
