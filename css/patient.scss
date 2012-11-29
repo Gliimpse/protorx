@@ -199,14 +199,11 @@ section {
 		.content {
 			background: $white;
 			padding: 0;
+			margin-bottom: 24px;
 			h3 {
 				padding: 15px;
 				padding-bottom: 20px;
 			}
-			.panel {
-				padding: 15px 0;
-			}
-
 		}
 
 					
@@ -339,3 +336,5 @@ section {
 		text-decoration: underline;
 	}
 }
+
+/* EOF */

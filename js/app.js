@@ -14,7 +14,7 @@
 
 	// Sync Heights of Columns
 	// @TODO window resize
-	$('.allergies .headline .panel, .allergies .content').syncHeight();
+	$('.allergies .headline .panel, .allergies .listing').syncHeight();
 	// $(window).resize(function(){
 	// $('p').syncHeight();
 	// });
