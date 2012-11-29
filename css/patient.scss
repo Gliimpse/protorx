@@ -1,16 +1,17 @@
+@import 'fonts.scss';
 @import 'normalize.css';
 @import 'foundation.css';
-@import 'fonts.scss';
 
 /* Base Colors */
+$blueSubdued:	#008DC9;
+$black:			#000000;
 $grey95:		#F3F3F3;
 $grey90: 		#e6e6e6;
 $grey80: 		#cccccc;
-$white:			#ffffff;
-$grey40:		#666666;
 $grey60:		#989898;
+$grey40:		#666666;
 $grey20:		#343434;
-$black:			#000000;
+$white:			#ffffff;
 
 /* Red 'Alert' colors */
 $alertOff:		#C75144;
@@ -24,19 +25,24 @@ $warnOn:		#F0A23A;
 $nominalOff:	#99C651;
 $nominalOn:		#A2DD3A;
 
-$blueSubdued:	#008DC9;
 
 /****************************************************************
  PAGE SETUP */
 
 body {
 	background: $grey95;
-	font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, Arial, Tahoma, sans-serif;
 	color: $grey60; 
 }
 
 /****************************************************************
  GLOBAL + BASE STYLES */
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
 
 a {
 	color: $blueSubdued;
@@ -55,6 +61,11 @@ address {
 	&.severity-severe {
 		background: url(../images/icn-attention.png) no-repeat;
 	}
+}
+
+.barcode {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
 }
 
 .number-circle {
@@ -79,75 +90,66 @@ address {
 	color: $warnOff;
 }
 
+.panel {
+	background: $white;
+	padding: 15px;
+}
+
 /****************************************************************
- DOCUMENT */
+ SECTION STYLES */
 
 section {
 
-	.listing {
-		ul {
-			list-style-type: none;
-			margin: 15px 0;
-			padding: 0;
-			li {
-				margin-left: 0;
-				padding-left: 0;
-				a {
-					color: inherit;
-					display: block;
-					border-radius: 5px;
-					text-decoration: none;
-					padding: 10px;
-					//border-bottom: 1px solid $grey90;
-					&:hover {
-						background: #fafafa;
-					}
-				}
-			}
-		}
-		font-size: 22px;
-		font-family: 'source_sans_pro_semiboldRg';
-		p {
-			padding: 5px;
-		}
-		small {
-			font-family: 'source_sans_proregular';
-			font-size: 15px;
-			color: $grey40;
-		}
-	}
+	margin-top: 15px;
 
+	/* 01 TOOLHEAD */
 	&.toolhead {
-		background: $grey20;
-		clear: both;
+		position: absolute;
+		width: 100%;
+		top: -20px;
 		ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			background: $grey40;
 			float: right;
+			margin-right: 15px;
 			li {
 				float: left;
 				position: relative;
-				/*border: 1px solid #333;
-				border-right: none; */
-				-webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; 
-				-moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; 
-				box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; 
+				margin-left: 10px;
 				a {
+					background: $grey80;
+					width: 55px;
 					display: block;
-					color: $white;
-					text-decoration: none;
-					padding: 5px 9px;
-					font-family: 'source_sans_probold';
-					text-transform: uppercase;
-					letter-spacing: -1px;
-					font-size: 18px;
-					&.icon {
-						font-family: 'source_code_probold';
+					height: 75px;
+					transform: skew(0deg,20deg);
+					-ms-transform: skew(0deg,20deg);
+					-webkit-transform: skew(0deg,20deg);
+					-o-transform: skew(0deg,20deg); 
+					-moz-transform: skew(0deg,20deg);
+					&:hover {
+						background: $grey40;
+					}
+					&:activated {
+						background: $blueSubdued;
 					}
 				}
 			}
+		}
+	}
+
+	/* 02 NAME */
+	&.name {
+		h1 {
+			font-family: 'source_sans_pro_extralight';
+			color: $grey60;
+		}
+	}
+
+	/* 03 BIO */
+	&.bio {
+		.panel {
+			min-height: 127px;
 		}
 	}
 
@@ -162,20 +164,7 @@ section {
 	}
 
 
-	.headline {
-		background: $grey40;
-		color: $white;
-		// letter-spacing: -1px;
-		&:before {
-		    content: '';
-		    position: absolute;
-		    bottom: 0; 
-		    right: 0;
-		    border-top: 10px solid $grey40;
-		    border-right: 10px solid $white;
-		    width: 0;
-		}
-	}
+
 
 	.alert .headline {
 		background: $alertOff;
@@ -183,7 +172,7 @@ section {
 
 
 
-	&.bio {
+	/*&.bio {
 		color: $grey60;
 		margin-top: 0;
 		h1 {
@@ -204,7 +193,7 @@ section {
 			padding-bottom: 5px;
 			color: $grey80;
 		}
-	}
+	}*/
 
 	&.updates {
 		background: $grey80;
@@ -214,11 +203,68 @@ section {
 }
 
 /****************************************************************
+ CONTENT STYLES */
+
+.listing {
+	ul {
+		list-style-type: none;
+		margin: 15px 0;
+		padding: 0;
+		li {
+			margin-left: 0;
+			padding-left: 0;
+			a {
+				color: inherit;
+				display: block;
+				border-radius: 5px;
+				text-decoration: none;
+				padding: 10px;
+				//border-bottom: 1px solid $grey90;
+				&:hover {
+					background: #fafafa;
+				}
+			}
+		}
+	}
+	font-size: 22px;
+	font-family: 'source_sans_pro_semiboldRg';
+	p {
+		padding: 5px;
+	}
+	small {
+		font-family: 'source_sans_proregular';
+		font-size: 15px;
+		color: $grey40;
+	}
+}
+
+.headline {
+	background: $grey40;
+	color: $white;
+	margin-left: 15px;
+	h2 {
+		font-size: 1.4em;
+	}
+	&:before {
+	    content: '';
+	    position: absolute;
+	    bottom: 0; 
+	    right: 0;
+	    border-top: 10px solid $grey40;
+	    border-right: 10px solid $white;
+	    width: 0;
+	}
+}
+
+/****************************************************************
  HIGH CONTRAST */
 
 .high-contrast {
 	*, *:before, *:after { 
 		background: $white !important; 
 		color: $black !important; 
+	}
+	.columns {
+		border: 1px solid #aaa;
 	}
 }
