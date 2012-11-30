@@ -60,6 +60,7 @@
 	$('.labs .headline .panel, .labs .content-container').syncHeight();
 	$('.encounters .headline .panel, .encounters .content').syncHeight();
 	$('.medications .headline .panel, .medications .content').syncHeight();
+	$('.vaccinations .headline .panel, .vaccinations .content').syncHeight();
 
 	// $(window).resize(function(){
 	// $('p').syncHeight();

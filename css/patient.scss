@@ -356,6 +356,17 @@ section {
 /****************************************************************
  CONTENT STYLES */
 
+ .tile-bignumber {
+ 	h2, p {
+ 		text-decoration: none;
+ 		text-transform: uppercase;
+ 		text-align: center;
+ 	}
+ 	h2 {
+ 		font-size: 69px;
+ 	}
+ }
+
 .next-steps {
 	background: #ffff99;
 	padding: 5px;

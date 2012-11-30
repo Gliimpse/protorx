@@ -26,7 +26,6 @@
   - add UA
 - redesign SECTION medications
 - important SECTION conditions (problems)
-- easy SECTION immunizations
 - SECTION procedures
 - SECTION care team
 - SECTION legal
