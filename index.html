@@ -26,7 +26,10 @@
             <div class="six columns">
                 <ul data-magellan-expedition>
                     <li data-magellan-arrival="allergies"><a href="#allergies">Allergies</a></li>
+                    <li data-magellan-arrival="allergies"><a href="#allergies">Conditions</a></li>
+                    <li data-magellan-arrival="allergies"><a href="#allergies">Vaccinations</a></li>
                     <li data-magellan-arrival="medications"><a href="#medications">Medications</a></li>
+                    <li data-magellan-arrival="medications"><a href="#medications">Encounters</a></li>
                     <li data-magellan-arrival="labs"><a href="#labs">Labs</a></li>
                 </ul>
             </div>
@@ -100,23 +103,23 @@
     <a data-magellan-destination="allergies" name="allergies"></a>
     <section class="allergies">
         <div class="row">
-            <div class="headline two columns alert">
+            <div class="headline two columns">
                 <div class="panel">
                     <h2>Allergies</h2>
                 </div>
             </div>
-            <div class="listing ten columns">
+            <div class="listing ten columns lines">
                 <div class="content panel">
                     <ul>
                         <li class="alert">
-                            <a href="#encounter-5e5eab10-3aaa-11e2-81c1-0800200c9a66">
+                            <a href="#encounter-5e5eab10-3aaa-11e2-81c1-0800200c9a66" class="line-item">
                                 <span class="severity severity-severe">Severe</span> 
                                 Shellfish
                                 <small class="reaction">anaphylactic shock</small>
                             </a>
                         </li>
                         <li class="warn">
-                            <a href="#encounter-9faa1792-928d-40a5-8878-b24d408136e9">
+                            <a href="#encounter-9faa1792-928d-40a5-8878-b24d408136e9" class="line-item">
                                 Ketoconazole
                                 <small class="reaction">dermatitis</small>
                             </a>
@@ -135,8 +138,36 @@
                 </div>
             </div>
 
-            <div class="grid ten column content">
-                x
+            <div class="listing grid ten column">
+                <div class="content panel lines">
+                    <ul>
+                        <li class="open">
+                            <a href="#" class="line-item">
+                                Ankle Sprain
+                                <small class="date">March 28, 2005 (7.5 years ago)</small>
+                            </a>
+                            <div class="detail iconed">
+                                <p>Slipped on ice and fell.</p>
+                                <p><strong>Associated Encounters: </strong> none</p>
+                                <p><strong>Associated Labs: </strong> none</p>
+                                <p><strong>Associated Medications: </strong> none</p>
+                            </div>
+                        </li>
+                        <li class="nomimal closed">
+                            <a href="#" class="line-item">
+                                <span class="severity severity-nominal">Resolved</span> 
+                                Cholecystitis
+                                <small class="date">November 14, 2002 (10 years ago)</small>
+                            </a>
+                            <div class="detail">
+                                <p>Surgery postponed until after delivery</p>
+                                <p><strong>Associated Encounters: </strong> <a href="#encounter-00ed28c0-3abe-11e2-81c1-0800200c9a66">Hennepin County Medical Center 11/14/2002</a></p>
+                                <p><strong>Associated Labs: </strong> none</p>
+                                <p><strong>Associated Medications: </strong> none</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -531,7 +562,7 @@
                                     <strong>Burnett Medical Center: </strong>Labor and delivery by Cesarian section
                                 </td>
                                 <td>
-                                    Stabilized in emergency room with Ana-Kit and histamine blocker in ER. <a href="#allergies">Adverse reaction to shellfish noted in allergies</a>.
+                                    Refer to send-home literature and return for prenatal checkup.
                                 </td>
                             </tr>
 
@@ -580,16 +611,6 @@
 
 
 
-# Problem List
-Observation: Ankle Sprain
-Status: Active
-Date: March 28, 2005
-Comments: Slipped on ice and fell.
-
-Observation: Cholecystitis
-Status: Resolved
-Date: September 28, 2002
-Comments: Surgery postponed until after delivery
 
 
 

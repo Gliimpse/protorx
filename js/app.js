@@ -30,6 +30,8 @@
 
 
 	// Expand and collapse lab results
+	// This was done really quickly while layout was changing rapidly
+	// Requires refactoring with object literals and functions
 	$('.lab-result.closed').live(
 		'click', function() {
 			$(this).removeClass('closed').addClass('open');

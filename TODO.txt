@@ -29,3 +29,5 @@
 - SECTION procedures
 - SECTION care team
 - SECTION legal
+- move icons into sprites
+- rename all the icon libraries into one
