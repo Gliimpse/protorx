@@ -1,5 +1,3 @@
-- Link up allergies to encounters
-- Create encounters with applicable allergies
 - Create tile content with associated links
 - Add scrollspy to page
 - Remove unnecessary JS
