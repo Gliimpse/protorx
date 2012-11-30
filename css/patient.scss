@@ -294,15 +294,27 @@ section {
 	
 }
 
+.disclaimer {
+	p {
+		text-align: center;
+		padding: 10px;
+	}
+}
+
 /****************************************************************
  CONTENT STYLES */
 
 .next-steps {
 	background: #ffff99;
-	padding: 3px;
+	padding: 5px;
+	color: $grey20;
 }
 
 .table {
+	width: 100%;
+	.panel {
+		padding: 15px 0;
+	}
 	thead {
 		td {
 			background: $grey95;
