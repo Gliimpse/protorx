@@ -6,6 +6,9 @@
 
 /* Base Colors */
 $blueSubdued:	#008DC9;
+$blueBright:	#00A4EE;
+$blueAqua:		#4DD2FF;
+
 $black:			#000000;
 $grey95:		#F3F3F3;
 $grey90: 		#e6e6e6;
@@ -408,6 +411,40 @@ section {
 	.table-goals,
 	.table-outcomes {
 		width: 35%;
+	}
+}
+
+.timeline {
+	.timeline-years {
+		background: $grey80;
+		display: block;
+		clear: both;
+		padding: 6px 0 10px 0;
+		ul {
+			list-style-type: none;
+			padding: 0 5px;
+			padding-left: 13px;
+			li {
+				float: left;
+				color: $white;
+				display: block;
+				padding: 0px 10px;
+				font-size: 14px;
+			}
+		}
+	}
+	.timeline-rail {
+		height: 6px;
+		background: $blueAqua;
+		display: block;
+		position: relative;
+		.timeline-indicator {
+			background: url(../images/icn-timeline-indicator.png) no-repeat;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			top: -4px;
+		}
 	}
 }
 
