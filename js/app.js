@@ -28,6 +28,29 @@
 		}
 	});
 
+	// Timeline events
+	$('.timeline-event').each(function() {
+		$(this).addClass('closed');
+	});
+
+	$('.timeline-event.closed a.summary').live(
+		'click', function() {
+			$(this).parent().find('.detail').slideDown();
+			$(this).parent().addClass('open');
+			//$('.conditions .headline .panel, .conditions .timeline').syncHeight();
+			return false;
+		}
+	);
+
+	$('.timeline-event.open a.summary').live(
+		'click', function() {
+			$(this).parent().find('.detail').slideUp();
+			$(this).parent().removeClass('open');
+			//$('.conditions .headline .panel, .conditions .timeline').syncHeight();
+			return false;
+		}
+	);
+
 
 	// Expand and collapse lab results
 	// This was done really quickly while layout was changing rapidly
@@ -63,6 +86,7 @@
 	$('.encounters .headline .panel, .encounters .content').syncHeight();
 	$('.medications .headline .panel, .medications .content').syncHeight();
 	$('.vaccinations .headline .panel, .vaccinations .content').syncHeight();
+	$('.conditions .headline .panel, .conditions .timeline').syncHeight();
 
 	// $(window).resize(function(){
 	// $('p').syncHeight();
