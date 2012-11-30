@@ -95,8 +95,8 @@
     </section>
 
     <!-- 03 ALLERGIES -->
-    <a data-magellan-destination="allergies"></a>
-    <section class="allergies" id="allergies">
+    <a data-magellan-destination="allergies" name="allergies"></a>
+    <section class="allergies">
         <div class="row">
             <div class="headline two columns alert">
                 <div class="panel">
@@ -125,8 +125,8 @@
         </div>
     </section>
 
-    <a data-magellan-destination="labs"></a>
-    <section class="labs" id="labs">
+    <a data-magellan-destination="labs" name="labs"></a>
+    <section class="labs">
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
@@ -135,6 +135,8 @@
             </div>
 
             <div class="content-container ten columns">
+                
+                <!-- Lab Result -->
                 <div class="panel content lab-result closed">
                     <h3>Fasting Blood Glucose <small>two days ago</small></h3>
                     <div class="graph-horizontal graph-horizontal-fbs">
@@ -174,7 +176,7 @@
                             <div class="panel">
                                 <p>
                                     Ordered by Dr. Sean Daley, North Memorial Medical Center<br />
-                                    June 22, 2012 — 1:42pm
+                                    November 30, 2012 — 1:42pm
                                 </p>
                             </div>
                         </div>
@@ -207,7 +209,103 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><!-- /lab result -->
+
+                <!-- Lab Result -->
+                <div class="panel content lab-result closed">
+                    <h3>Cholesterol <small>four months ago</small></h3>
+                    <div class="graph-horizontal graph-horizontal-fbs">
+                        <div class="graph-horizontal-labels">
+                            <ul>
+                                <li style="width: 34%;"><strong>Normal</strong>: Fasting blood sugar in this range is normal.</li>
+                                <li style="width: 23%;"><strong>Elevated</strong>: Fasting blood sugar in the range of 101-125 mg/dL is a cause of concern for possible prediabetes and should be monitored.</li>
+                                <li style="width: 43%;"><strong>High</strong>: Fasting blood sugar above 126 mg/dL is an indicator of possible established diabetes.</li>
+                            </ul>
+                        </div>
+                        <span class="graph-horizontal-marker" style="left: 24%;">
+                            <span class="graph-result-label"><strong>152</strong> mg/dL</span>
+                        </span>
+                    </div>
+                    <div class="graph-horizontal graph-horizontal-fbs">
+                        <div class="graph-horizontal-labels">
+                            <ul>
+                                <li style="width: 34%;"><strong>Normal</strong>: Fasting blood sugar in this range is normal.</li>
+                                <li style="width: 23%;"><strong>Elevated</strong>: Fasting blood sugar in the range of 101-125 mg/dL is a cause of concern for possible prediabetes and should be monitored.</li>
+                                <li style="width: 43%;"><strong>High</strong>: Fasting blood sugar above 126 mg/dL is an indicator of possible established diabetes.</li>
+                            </ul>
+                        </div>
+                        <span class="graph-horizontal-marker" style="left: 24%;">
+                            <span class="graph-result-label"><strong>152</strong> mg/dL</span>
+                        </span>
+                    </div>
+                    <div class="graph-horizontal graph-horizontal-fbs">
+                        <div class="graph-horizontal-labels">
+                            <ul>
+                                <li style="width: 34%;"><strong>Normal</strong>: Fasting blood sugar in this range is normal.</li>
+                                <li style="width: 23%;"><strong>Elevated</strong>: Fasting blood sugar in the range of 101-125 mg/dL is a cause of concern for possible prediabetes and should be monitored.</li>
+                                <li style="width: 43%;"><strong>High</strong>: Fasting blood sugar above 126 mg/dL is an indicator of possible established diabetes.</li>
+                            </ul>
+                        </div>
+                        <span class="graph-horizontal-marker" style="left: 24%;">
+                            <span class="graph-result-label"><strong>152</strong> mg/dL</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="three columns">
+                            <div class="panel">
+                                <h4>Trending analysis</h4>
+                            </div>
+                        </div>
+                        <div class="nine columns">
+                            <div class="panel">
+                                <p>No prior lab results available for cholesterol.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="three columns">
+                            <div class="panel">
+                                <h4>Lab details</h4>
+                            </div>
+                        </div>
+                        <div class="nine columns">
+                            <div class="panel">
+                                <p>
+                                    Ordered by Dr. Pina Colada, University of Miami Hospital<br />
+                                    June 22, 2012 — 9:16am
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="three columns">
+                            <div class="panel">
+                                <h4>Physician notes</h4>
+                            </div>
+                        </div>
+                        <div class="nine columns">
+                            <div class="panel">
+                                <p class="highlight padded">
+                                    Triglycerides are slightly elevated. Limit fats and sugars, alcohol, and increase physical activity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="three columns">
+                            <div class="panel">
+                                <h4>About this lab</h4>
+                            </div>
+                        </div>
+                        <div class="nine columns">
+                            <div class="panel">
+                                <p>
+                                    High triglycerides can raise your risk for heart disease, diabetes and stroke. Diet and lifestyle changes are the biggest factor in your cholesterol levels.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /lab result -->
 
             </div>
 
@@ -216,8 +314,8 @@
 
 
 
-    <a data-magellan-destination="medications"></a>
-    <section class="medications" id="medications">
+    <a data-magellan-destination="medications" name="medications"></a>
+    <section class="medications">
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
@@ -263,6 +361,70 @@
 
     </section>
 
+
+
+
+    <section class="encounters">
+        <div class="row">
+            <div class="headline two columns">
+                <div class="panel">
+                    <h2>Encounters</h2>
+                </div>
+            </div>
+
+            <div class="table ten column content">
+                <div class="panel">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="table-date">Date</td>
+                                <td class="table-type">Visit Type</td>
+                                <td class="table-goals">Goals</td>
+                                <td class="table-outcomes">Outcomes and Next Steps</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>June 22, 2012</td>
+                                <td>Office Visit</td>
+                                <td>
+                                    Routine general medical examination at a health care facility, 
+                                    Screening for diabetes mellitus with <a href="#">lab glucose</a>, 
+                                    Screening for ischemic heart disease 
+                                </td>
+                                <td>
+                                    Prescribed <a href="#">Ketoconzole</a>, which was later found to cause a dermititis <a href="#allergies">allergic reaction</a>. Will follow up with lab results.<br /><br />
+                                    <div class="next-steps"><strong>Your Next Steps:</strong> Call if you begin feeling burning sensations.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>August 14, 2011</td>
+                                <td>Emergency Room</td>
+                                <td>
+                                    Patient presenting severe abdomen pain, 
+                                    Perform lab urinalysis, 
+                                    Perform complete blood count lab, 
+                                    Perform axial CT abdomen with IV contrast, 
+                                    Perform axial CT pelvis with IV contrast, 
+                                    Prepare emergency center draw and hold blood sample
+                                </td>
+                                <td>
+                                    Epiploic appendices inflamed and self-limiting. Reactive scattered subcentimeter mesenteric lymph nodes. No major concerns. No adverse reaction to oral or 100 mL Optiray IV contrast. Prescribing pain medication. Return if condition worsens.
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
     <ol id="joyRideContent" style="display:none">
         <li data-id="patient-name" data-button="Next">
             <p>The patient's name is large and easy to read.</p>
@@ -298,6 +460,39 @@
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<!--
+
+
+
+
+
+
+
+
+HISTORY:  Left lower quadrant pain.
+
+TECHNIQUE:  Axial CT images through the abdomen and pelvis obtained after the administration of oral and 100 mL Optiray intravenous contrast.
+
+FINDINGS:  There is soft-tissue stranding in the left lower quadrant of the abdomen, which is best seen on image 56 and 57. There is a small amount of free fluid present within the pelvis. Normal appendix visualized in the right lower quadrant. Numerous subcentimeter lymph nodes are present in the mesentery. Liver, spleen, pancreas, kidneys and adrenal glands are unremarkable. No dilated bowel loops.  Remainder of the examination is unremarkable.
+
+
+DTP 4/8/1992
+Hep B Adult Vaccine (20+ yrs) 20mcg 3/12/2001,  10/15/1998,  9/15/1998
+MMR 7/30/1996
+Oral Polio Vaccine  4/8/1992
+Rabies  2/28/2007,  2/23/2007,  2/20/2007
+Rabies IG   2/20/2007,  2/20/2007,  2/20/2007,  2/20/2007
+Td Adult (>7 years) 1/1/2007,  9/15/1998
+
+
+B/B OTIC OTIC SOLUTION
+Instructions: Place 1-2 drops in ear(s) 4 times daily as needed. lw addl instr:indicated for: ear pain
+Prescribed by 
+
+
+
+-->
 
 
 
