@@ -14,3 +14,6 @@ Includes portions of the following open source third-party libraries and codebas
    - Adobe Source Sans Pro, SIL Open Font License (OFL)
    - Adobe Source Code Pro, SIL Open Font License (OFL)
  - Iconography
+   - Eye designed by John Caserta from The Noun Project (Creative Commons)
+   - Contrast from the Noun Project (Creative Commons)
+   - Car by Roger Cook & Don Shanosky from the Noun Project (Public Domain)

@@ -2,6 +2,7 @@
 @import 'normalize.css';
 @import 'foundation.css';
 @import 'joyride.css';
+@import 'bootstrap-components.css';
 
 /* Base Colors */
 $blueSubdued:	#008DC9;
@@ -221,11 +222,62 @@ section {
 
 	/* 04 MEDICATIONS */
 	&.medications {
+		.content-inner {
+			padding: 15px 0;
+		}
 		a { text-decoration: none; }
 		.grid {
-			margin: 15px 0;
+			/*margin: 15px 0;*/
 			.column {
-				background: $grey90;
+				.panel {
+					background: $grey90;
+					margin-bottom: 15px;
+				}
+				.medication {
+					text-align: center;
+					padding: 15px 0;
+					h5 {
+						text-transform: uppercase;
+						color: $grey40;
+						font-size: 13px;
+						margin-top: 6px;
+					}
+				}
+				.instructions {
+					font-size: 14px;
+					color: $grey20;
+					padding-top: 10px;
+					text-align: center;
+				}
+				.remaining {
+					background: $blueSubdued;
+					display: block;
+					float: right;
+					position: absolute;
+					bottom: 15px;
+					right: 15px;
+					color: $white;
+					font-size: 28px;
+					span {
+						display: block;
+						padding: 5px 8px;
+					}
+					&.low {
+						background: $alertOff;
+					}
+				}
+				&.discontinued {
+					.panel {
+						background: $grey95;
+						color: $grey80;
+						.instructions, h5 {
+							color: $grey80;
+						}
+						h4 {
+							color: $alertOff;
+						}
+					}
+				}
 			}
 		}
 	}

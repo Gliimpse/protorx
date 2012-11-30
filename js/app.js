@@ -1,5 +1,8 @@
 (function() {
 
+	// Trigger tooltips
+	$("[rel=tooltip]").tooltip();
+
 	$('.graph-horizontal-labels').hide();
 
 	$("#js-tour-page").click(function() {
@@ -55,6 +58,9 @@
 	// @TODO window resize
 	$('.allergies .headline .panel, .allergies .listing').syncHeight();
 	$('.labs .headline .panel, .labs .content-container').syncHeight();
+	$('.encounters .headline .panel, .encounters .content').syncHeight();
+	$('.medications .headline .panel, .medications .content').syncHeight();
+
 	// $(window).resize(function(){
 	// $('p').syncHeight();
 	// });
