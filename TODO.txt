@@ -4,8 +4,6 @@ Before submission:
 	- Add section care team
 	- Add action banner in immunizations
 	- Add scrollspy to page
-	- Add language
-	- Add appropriate licensing information
 	- Finalize tour
 	- Mobile adjustments
 	- Capture screenshots
@@ -35,3 +33,4 @@ Medium-term:
 
 Long-term:
 	- add data-* attributes for LOINC, ICD-*, SNOMED CT
+	- Page search

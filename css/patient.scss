@@ -251,12 +251,17 @@ section {
 		a { text-decoration: none; }
 
 		.double {
+			.medication-row {
+				height: 20px;
+				clear: both;
+			}
 			padding: 0;
 			margin: 0;
 			.medication-single {
 				.panel {
 					background: #EBEBEB;
 					padding: 0;
+					min-height: 235px;
 				}
 			}
 			.medication-category {
@@ -266,6 +271,12 @@ section {
 				width: 100%;
 				padding: 14px 14px 12px 14px;
 				font-weight: 700;
+				&.durable {
+					background: #8000FF;
+				}
+				&.discontinued {
+					background: $alertOff;
+				}
 			}
 			.medication-detail {
 				width: 100%;
@@ -290,15 +301,18 @@ section {
 						font-size: 24px;
 						padding-bottom: 19px;
 						margin-top: -19px;
+						padding-right: 10px;
 					}
 					.meta {
 						padding: 14px;
 						.meta-date,
 						.meta-refills {
-							width: 50%;
+							padding: 5px;
+							width: 42%;
 							float: left;
 							line-height: 1.3em;
-							font-size: 17px;
+							font-size: 14px;
+							font-weight: 600;
 							small {
 								clear: both;
 								display: block;
@@ -313,6 +327,44 @@ section {
 					width: 32%;
 					float: left;
 					clear: right;
+					background: $grey40;
+					min-height: 235px;
+					&.discontinued {
+						background: $alertOff;
+						color: $white;
+					}
+					p {
+						padding-top: 15px;
+						text-align: center;
+						line-height: 1.1em;
+						font-size: 15px;
+						text-transform: uppercase;
+					}
+					.single-day {
+						padding: 10px;
+						color: $white;
+						line-height: 1.35em;
+						clear: both;
+						.day { 
+							text-transform: uppercase; 
+							float: left;
+							width: 28px;
+						} 
+						.illus {
+							float: left;
+							padding-left: 6px;
+							margin-top: -1px;
+							.pill {
+								background: url(../images/icn-pill-small.png) no-repeat;
+								height: 7px;
+								width: 11px;
+								display: inline-block;
+							}
+							.sep {
+
+							}
+						}
+					}
 				}
 			}
 		}
