@@ -22,6 +22,7 @@
 		'click', function() {
 			$('body').removeClass('regular-contrast').addClass('high-contrast');
 			$(this).parent().addClass('active');
+			$(this).find('span').html('on');
 			return false;
 		}
 	);
@@ -29,6 +30,7 @@
 		'click', function() {
 			$('body').addClass('regular-contrast').removeClass('high-contrast');
 			$(this).parent().removeClass('active');
+			$(this).find('span').html('off');
 			return false;
 		}
 	);

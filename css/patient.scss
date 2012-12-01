@@ -114,7 +114,7 @@ address {
  SECTION STYLES */
 
 .fixed-header {
-	background: $grey20;
+	background: $blueSubdued;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -136,7 +136,7 @@ address {
 		li {
 			float: left;
 			&:hover {
-				background: $grey40; 
+				background: $blueBright; 
 			}
 			&.active {
 				background: $blueSubdued;
@@ -159,7 +159,11 @@ address {
 				background: $grey40;
 			}
 			&.active {
-				background: $blueSubdued;
+				background: $black;
+			}
+			span {
+				text-transform: uppercase;
+				font-weight: 600;
 			}
 			a {
 				color: $white;
@@ -370,6 +374,7 @@ section {
 	background: #ffff99;
 	padding: 5px;
 	color: $grey20;
+	font-size: 16px;
 }
 
 .table {
@@ -380,10 +385,16 @@ section {
 	table {
 		width: 100%;
 	}
+	tr:hover {
+		background: #fafafa;
+	}
 	thead {
 		td {
 			background: $grey95;
 			padding: 8px;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.4em;
 		}
 	}
 	tbody {
@@ -392,6 +403,9 @@ section {
 			border-bottom: 1px solid $grey95;
 			font-size: 15px;
 			vertical-align: top;
+			font-size: 16px;
+			line-height: 1.4em;
+
 		}
 	}
 	.table-date {
@@ -669,6 +683,9 @@ section {
 	}
 	p, td, address, h1, h2, h3, h4, h5, h6, #patient-name { color: $black; }
 	.highlight, .next-steps { border: 3px solid red; background: $white; color: $black; }
+	.fixed-header {
+		background: $black;
+	}
 }
 
 /****************************************************************
