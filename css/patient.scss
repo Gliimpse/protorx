@@ -249,6 +249,69 @@ section {
 			padding: 15px 0;
 		}
 		a { text-decoration: none; }
+
+		.double {
+			padding: 0;
+			margin: 0;
+			.medication-single {
+				.panel {
+					background: #EBEBEB;
+					padding: 0;
+				}
+			}
+			.medication-category {
+				background: #00D9A3;
+				color: $white;
+				text-transform: uppercase;
+				width: 100%;
+				padding: 8px 8px 6px 8px;
+				font-weight: 700;
+			}
+			.medication-detail {
+				width: 100%;
+				.medication-rx {
+					width: 68%;
+					float: left;
+					padding-bottom: 10px;
+
+					h4 {
+						padding: 6px;
+						font-weight: 200;
+						font-size: 34px;
+						small {
+							font-weight: 200;
+						}
+					}
+					p {
+						padding: 30px;
+					}
+					.meta {
+						padding: 6px;
+						.meta-date,
+						.meta-refills {
+							width: 50%;
+							float: left;
+							line-height: 1.3em;
+							font-size: 17px;
+							small {
+								clear: both;
+								display: block;
+								text-transform: uppercase;
+								font-weight: 200;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+				.medication-illustration {
+					width: 32%;
+					float: left;
+					clear: right;
+				}
+			}
+		}
+
+
 		.grid {
 			/*margin: 15px 0;*/
 			.column {
