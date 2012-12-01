@@ -264,7 +264,7 @@ section {
 				color: $white;
 				text-transform: uppercase;
 				width: 100%;
-				padding: 8px 8px 6px 8px;
+				padding: 14px 14px 12px 14px;
 				font-weight: 700;
 			}
 			.medication-detail {
@@ -275,18 +275,24 @@ section {
 					padding-bottom: 10px;
 
 					h4 {
-						padding: 6px;
+						padding: 8px 12px;
 						font-weight: 200;
 						font-size: 34px;
 						small {
 							font-weight: 200;
 						}
 					}
-					p {
-						padding: 30px;
+					.instructions {
+						background: url(../images/bg-callout.gif) no-repeat;
+						margin-left: -7px;
+						padding-left: 24px;
+						padding-top: 40px;
+						font-size: 24px;
+						padding-bottom: 19px;
+						margin-top: -19px;
 					}
 					.meta {
-						padding: 6px;
+						padding: 14px;
 						.meta-date,
 						.meta-refills {
 							width: 50%;
