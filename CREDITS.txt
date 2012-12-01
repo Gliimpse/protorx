@@ -8,3 +8,7 @@ protoRx includes portions of the following open source third-party libraries and
    - Twitter Bootstrap srollspy/tooltips jQuery plugins, APL v2 license
  - Typography
    - Adobe Source Sans Pro, SIL Open Font License (OFL)
+ - Iconography
+   - famfamfam flag icons, Royalty free with no attribution requirement
+
+See LICENSE.txt

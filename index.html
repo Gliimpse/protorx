@@ -6,21 +6,21 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Lucille Désirée Ball | Patient Record</title>
-<meta name="description" content="">
+<title>protoRx HTML Patient Medical Record Prototype Demo</title>
+<meta name="description" content="protoRx is a prototype of a dynamic web-based patient medical record.">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/patient.css">
 <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar">
+
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="fixed-header">
         <div class="row">
-            <div class="eight columns navigation">
+            <div class="eight columns navigation small-twelve">
                 <ul>
                     <li><a href="#allergies">Allergies</a></li>
                     <li><a href="#conditions">Conditions</a></li>
@@ -30,7 +30,7 @@
                     <li><a href="#encounters">Encounters</a></li>
                 </ul>
             </div>
-            <div class="four columns accessibility" id="tour-access-links">
+            <div class="four columns accessibility hide-for-small" id="tour-access-links">
                 <ul>
                     <li class="tour">
                         <a href="#" title="Take a Tour of protoRx" id="js-tour-page">Tour</a>
@@ -38,9 +38,9 @@
                     <li id="js-high-contrast">
                         <a href="#" title="Switch to High Contrast View">High Contrast <span>off</span></a>
                     </li>
-                    <!-- <li>
-                        <a href="#" title="Zoom In" class="icon" id="js-zoom-in">Zoom In</a>
-                    </li> -->
+                    <li id="js-language">
+                        <a href="#" title="Change Language" class="icon"><img src="images/icn-lang-en.png" alt="English" /></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -50,7 +50,7 @@
     <section class="name">
         <div class="row" id="tour-patient-name">
             <div class="twelve columns">
-                <h1 id="patient-name">Lucille Désirée Ball</h1>
+                <h1 id="patient-name">Lucille D&eacute;sir&eacute;e Ball</h1>
             </div>
         </div>
     </section>
@@ -683,9 +683,6 @@ Telephone: 816-276-6909
         <li data-id="tour-graceful-degradation" data-button="Next">
             <p>protoRx looks best on modern browsers, but gracefully degrades on legacy browsers. It's been tested for functionality with IE6, IE7, IE8, IE9, Firefox ESR, Safari, Chrome and Opera.</p>
         </li>
-        <!-- <li data-id="tour-print-friendly" data-button="End Tour">
-            <p>protoRx is printer-friendly and is perfectly readable while printed in black and white or color.  Even if printed and later faxed, the document will retain readability.</p>
-        </li> -->
     </ol>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -694,6 +691,8 @@ Telephone: 816-276-6909
     <script src="js/jquery.syncheight.js"></script>
     <script src="js/bootstrap-components.min.js"></script>
     <script src="js/app.min.js?1"></script>
+
+    <!-- protoRx prototype - Copyright (c) 2012, Tony Webster.  See README.txt, LICENSE.txt, CREDITS.txt -->
 
 </body>
 </html>
