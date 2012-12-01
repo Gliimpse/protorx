@@ -5,7 +5,9 @@
  / .___/_/   \____/\__/\____/_/ |_/_/|_|  
 /_/                                      
 
-an extensible patient-friendly open-source medical record framework prototype
+an open-source web-based medical record prototype
+
+DEMO: http://demo.protorx.com/
 
 Created in November 2012 for the Health Design Challenge by Tony Webster.
 

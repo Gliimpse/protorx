@@ -5,10 +5,6 @@
 @import 'bootstrap-components.css';
 
 /* Base Colors */
-$blueSubdued:	#008DC9;
-$blueBright:	#00A4EE;
-$blueAqua:		#4DD2FF;
-
 $black:			#000000;
 $grey95:		#F3F3F3;
 $grey90: 		#e6e6e6;
@@ -17,7 +13,11 @@ $grey60:		#989898;
 $grey40:		#666666;
 $grey20:		#343434;
 $white:			#ffffff;
-$pink:			#FF00A8;
+
+/* Blue secondary colors */
+$blueSubdued:	#008DC9;
+$blueBright:	#00A4EE;
+$blueAqua:		#4DD2FF;
 
 /* Red 'Alert' colors */
 $alertOff:		#C75144;
@@ -375,7 +375,7 @@ section {
 				}
 			}
 			.graph-vertical-container {
-				
+
 			}
 		}
 
@@ -401,9 +401,10 @@ section {
 }
 
 .disclaimer {
+	padding: 15px;
 	p {
 		text-align: center;
-		padding: 10px;
+		line-height: 1.5em;
 	}
 }
 
@@ -749,4 +750,5 @@ section {
 	}
 }
 
+/* See CREDITS.txt, LICENSE.txt, README.txt */
 /* EOF */

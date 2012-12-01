@@ -74,7 +74,7 @@
                 <div class="panel patient-proprietary">
                     <img src="images/fpo-barcode.png" alt="Barcode" class="barcode" />
                     <p>JTTO331613</p>
-                    <p>12/12/1940 &nbsp; F &nbsp; DNR</p>
+                    <p>DEC 28 1940 &nbsp; F &nbsp; DNR</p>
                 </div>
             </div>
             <div class="two columns">
@@ -161,9 +161,9 @@
                     </a>
                     <div class="detail iconed">
                         <p>Slipped on ice and fell.</p>
-                        <p><strong>Associated Encounters: </strong> none</p>
-                        <p><strong>Associated Labs: </strong> none</p>
-                        <p><strong>Associated Medications: </strong> none</p>
+                        <p><strong>Associated Encounters: </strong> <a href="#encounters">Example Encounter 03/31/2005</a></p>
+                        <p><strong>Associated Labs: </strong> <a href="#labs">Example Lab 09/14/2007</a>, <a href="#labs">Example Lab 10/16/2008</a></p>
+                        <p><strong>Associated Medications: </strong> <a href="#medications">Example Medication</a></p>
                     </div>
                 </div><!-- /.timeline-event -->
                 <div class="timeline-event">
@@ -176,9 +176,9 @@
                     </a>
                     <div class="detail iconed">
                         <p>Patient experiencing pain and soreness.</p>
-                        <p><strong>Associated Encounters: </strong> none</p>
-                        <p><strong>Associated Labs: </strong> none</p>
-                        <p><strong>Associated Medications: </strong> none</p>
+                        <p><strong>Associated Encounters: </strong> <a href="#encounters">Example Encounter 03/31/2005</a></p>
+                        <p><strong>Associated Labs: </strong> <a href="#labs">Example Lab 09/14/2007</a>, <a href="#labs">Example Lab 10/16/2008</a></p>
+                        <p><strong>Associated Medications: </strong> <a href="#medications">Example Medication</a></p>
                     </div>
                 </div><!-- /.timeline-event -->
                 <div class="timeline-event resolved">
@@ -192,8 +192,8 @@
                     <div class="detail iconed">
                         <p>Surgery postponed until after delivery</p>
                         <p><strong>Associated Encounters: </strong> <a href="#encounter-00ed28c0-3abe-11e2-81c1-0800200c9a66">Hennepin County Medical Center 11/14/2002</a></p>
-                        <p><strong>Associated Labs: </strong> none</p>
-                        <p><strong>Associated Medications: </strong> none</p>
+                        <p><strong>Associated Labs: </strong> <a href="#labs">Example Lab 09/14/2007</a>, <a href="#labs">Example Lab 10/16/2008</a></p>
+                        <p><strong>Associated Medications: </strong> <a href="#medications">Example Medication</a></p>
                     </div>
                 </div><!-- /.timeline-event -->
                 <div class="timeline-event resolved">
@@ -206,7 +206,7 @@
                     </a>
                     <div class="detail iconed">
                         <p>Appendix removed in surgery</p>
-                        <p><strong>Associated Encounters: </strong> none</p>
+                        <p><strong>Associated Encounters: </strong> <a href="#encounters">Example Encounter 03/31/2005</a></p>
                         <p><strong>Associated Labs: </strong> none</p>
                         <p><strong>Associated Medications: </strong> none</p>
                     </div>
@@ -422,31 +422,31 @@
                             </tr>
                             <tr>
                                 <td class="warn">TD Adult</td>
-                                <td><span class="warn">Due Soon</span>,  9/15/1998</td>
+                                <td><span class="warn">Due Soon</span>,  8/15/1998</td>
                             </tr>
                             <tr>
                                 <td>DTP</td>
-                                <td>4/8/1992</td>
+                                <td>4/6/1991</td>
                             </tr>
                             <tr>
                                 <td>Hep B Adult Vaccine 20mcg</td>
-                                <td>3/12/2001,  10/15/1998,  9/15/1998</td>
+                                <td>3/13/2001,  10/16/1998,  9/14/1998</td>
                             </tr>
                             <tr>
                                 <td>MMR (<a href="http://www.cdc.gov/vaccines/pubs/vis/downloads/vis-mmr.pdf" target="_blank">?</a>)</td>
-                                <td>7/30/1996</td>
+                                <td>7/24/1994</td>
                             </tr>
                             <tr>
                                 <td>Oral Polio Vaccine (<a href="http://www.cdc.gov/vaccines/vpd-vac/polio/default.htm" target="_blank">?</a>)</td>
-                                <td>4/8/1992</td>
+                                <td>5/8/1994</td>
                             </tr>
                             <tr>
                                 <td>Rabies (<a href="http://www.cdc.gov/vaccines/vpd-vac/rabies/default.htm" target="_blank">?</a>)</td>
-                                <td>2/28/2007,  2/23/2007,  2/20/2007</td>
+                                <td>2/29/2007,  2/24/2007,  2/21/2007</td>
                             </tr>
                             <tr>
                                 <td>Rabies IG (<a href="http://www.cdc.gov/vaccines/vpd-vac/rabies/default.htm" target="_blank">?</a>)</td>
-                                <td>2/20/2007,  2/20/2007,  2/20/2007,  2/20/2007</td>
+                                <td>2/21/2007,  2/21/2007,  2/21/2007,  2/21/2007</td>
                             </tr>
                         </tbody>
                     </table>
@@ -463,12 +463,46 @@
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
-                    <h2>Meds</h2>
+                    <h2>Meds<!--Medications--></h2>
                 </div>
             </div>
 
             <div class="grid ten column content">
                 <div class="panel content-inner">
+
+                    <div class="six column medication-single">
+                        <div class="medication-category">Prescribed Medication</div>
+                        <div class="medication-detail">
+                            <div class="medication-rx">
+                                <h4>Excedrin <small>600mg</small></h4>
+                                <p class="instructions">Take two pills, two times per day.</p>
+                                <div class="meta">
+                                    <div class="meta-date">
+                                        <small>Prescribed</small> Oct 14, 2012
+                                    </div>
+                                    <div class="meta-refills">
+                                        <small>Refills Remaining</small>
+                                        5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medication-illustration">
+                                <div class="single-day">
+                                    <div class="day">Sun</div>
+                                    <div class="segments">
+                                        <div class="segment">
+                                            <div class="desc">am</div>
+                                            <div class="illus"><span class="pill"></span> <span class="pill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.medication-single -->
+
+
+
+
 
                     <div class="four column med">
                         <div class="panel">
@@ -529,14 +563,9 @@
                     </div><!-- /.medication -->
 
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
 
 
     <section class="encounters">
@@ -564,9 +593,7 @@
                                 <td>June 22, 2012</td>
                                 <td>Office Visit</td>
                                 <td>
-                                    <strong>Blaisdell Manor Health Services: </strong>Routine general medical examination at a health care facility, 
-                                    Screening for diabetes mellitus with <a href="#">lab glucose</a>, 
-                                    Screening for ischemic heart disease 
+                                    <strong>Blaisdell Manor Health Services: </strong>Routine general medical examination at a health care facility, Screening for diabetes mellitus with <a href="#">lab glucose</a>, Screening for ischemic heart disease 
                                 </td>
                                 <td>
                                     Prescribed <a href="#">Ketoconzole</a>, which was later found to cause a dermititis <a href="#allergies">allergic reaction</a>. Will follow up with lab results.<br /><br />
@@ -578,11 +605,7 @@
                                 <td>Emergency Room</td>
                                 <td>
                                     <strong>UCSF Medical Center: </strong>Patient presenting severe abdomen pain, 
-                                    Perform lab urinalysis, 
-                                    Perform complete blood count lab, 
-                                    Perform axial CT abdomen with IV contrast, 
-                                    Perform axial CT pelvis with IV contrast, 
-                                    Prepare emergency center draw and hold blood sample
+                                    Perform lab urinalysis, Perform complete blood count lab, Perform axial CT abdomen with IV contrast, Perform axial CT pelvis with IV contrast, Prepare emergency center draw and hold blood sample
                                 </td>
                                 <td>
                                     Epiploic appendices inflamed and self-limiting. Reactive scattered subcentimeter mesenteric lymph nodes. No major concerns. No adverse reaction to oral or 100 mL Optiray IV contrast. Prescribing pain medication. Return if condition worsens.
@@ -656,7 +679,8 @@ Telephone: 816-276-6909
 
     <div class="row disclaimer">
         <div class="twelve columns">
-            <p>This is a demonstration and does not represent an actual person or a real medical record.</p>
+            <p>protoRx prototype by <a href="https://tonywebster.com" title="Tony Webster | designer / developer" target="_blank">Tony Webster</a></p>
+            <p>Demonstration: does not represent an actual person or a real medical record</p>
         </div>
     </div>
 
@@ -678,10 +702,10 @@ Telephone: 816-276-6909
             <p>The patient's allergies are shown near the top of the page to alert medical staff and remind the patient to review those allergens for accuracy every time they see their record. Clicking on an allergy will navigate the user to the associated provider encounter.</p>
         </li>
         <li data-id="tour-fully-responsive" data-button="Next">
-            <p>protoRx is fully responsive and flexible, and can be viewed on desktop, tablet, and mobile. Try it out!</p>
+            <p>protoRx is fully responsive and flexible, and can be viewed on desktop, tablet, and mobile.</p>
         </li>
         <li data-id="tour-graceful-degradation" data-button="Next">
-            <p>protoRx looks best on modern browsers, but gracefully degrades on legacy browsers. It's been tested for functionality with IE6, IE7, IE8, IE9, Firefox ESR, Safari, Chrome and Opera.</p>
+            <p>protoRx looks best on modern browsers, but gracefully degrades on legacy browsers.</p>
         </li>
     </ol>
 
