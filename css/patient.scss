@@ -119,7 +119,7 @@ address {
 	top: 0;
 	width: 100%;
 	z-index: 9999;
-	display: none;
+	display: block;
 	p {
 		color: $white;
 		font-size: 1.4em;
@@ -129,17 +129,43 @@ address {
 			font-size: 0.7em;
 		}
 	}
-	ul {
+	.navigation ul {
+		list-style-type: none;
+		float: left;
+		margin-bottom: 0;
+		li {
+			float: left;
+			&:hover {
+				background: $grey40; 
+			}
+			&.active {
+				background: $blueSubdued;
+			}
+			a {
+				color: $white;
+				line-height: 38px;
+				padding: 0 10px;
+				display: block;
+			}
+		}
+	}
+	.accessibility ul {
 		list-style-type: none;
 		float: right;
 		margin-bottom: 0;
 		li {
 			float: left;
-			line-height: 38px;
-			padding-left: 13px;
+			&.tour {
+				background: $grey40;
+			}
+			&.active {
+				background: $blueSubdued;
+			}
 			a {
 				color: $white;
-
+				line-height: 38px;
+				padding: 0 10px;
+				display: block;
 			}
 		}
 	}
@@ -148,43 +174,6 @@ address {
 section {
 
 	margin-top: 30px;
-
-	/* 00 TOOLHEAD */
-	&.toolhead {
-		position: absolute;
-		width: 100%;
-		top: -80px;
-		z-index: 9999;
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			float: right;
-			margin-right: 15px;
-			li {
-				float: left;
-				position: relative;
-				margin-left: 10px;
-				a {
-					background: $grey80;
-					width: 55px;
-					display: block;
-					height: 75px;
-					transform: skew(0deg,20deg);
-					-ms-transform: skew(0deg,20deg);
-					-webkit-transform: skew(0deg,20deg);
-					-o-transform: skew(0deg,20deg); 
-					-moz-transform: skew(0deg,20deg);
-					&:hover {
-						background: $grey40;
-					}
-					&.active {
-						background: $blueSubdued;
-					}
-				}
-			}
-		}
-	}
 
 	/* 01 NAME */
 	&.name {
@@ -388,6 +377,9 @@ section {
 	.panel {
 		padding: 15px 0;
 	}
+	table {
+		width: 100%;
+	}
 	thead {
 		td {
 			background: $grey95;
@@ -444,6 +436,9 @@ section {
 			height: 15px;
 			position: absolute;
 			top: -4px;
+			&.timeline-indicator-stretch {
+				background: url(../images/icn-timeline-indicator-tail.png) no-repeat;
+			}
 		}
 	}
 	.resolved .timeline-rail {
@@ -461,6 +456,9 @@ section {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );
 		display: block;
 		padding: 15px;
+		&:hover {
+			background: #fff;
+		}
 	}
 	h3 {
 		font-weight: 400;
@@ -652,17 +650,25 @@ section {
  HIGH CONTRAST */
 
 .high-contrast {
+	background: $white;
 	.barcode {
 		opacity: 1.0;
 		filter: alpha(opacity=100);
 	}
-	*, *:before, *:after { 
+	/**, *:before, *:after { 
 		background: none !important; 
 		color: $black !important; 
 	}
 	.columns {
 		border: 1px solid #aaa;
+	}*/
+
+	.headline .panel {
+		background: $white;
+		color: $black;
 	}
+	p, td, address, h1, h2, h3, h4, h5, h6, #patient-name { color: $black; }
+	.highlight, .next-steps { border: 3px solid red; background: $white; color: $black; }
 }
 
 /****************************************************************

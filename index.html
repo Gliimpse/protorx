@@ -13,24 +13,34 @@
 <link rel="stylesheet" href="css/patient.css">
 <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="fixed-header">
         <div class="row">
-            <div class="six columns">
-                <p>Lucille Désirée Ball <small>12/12/1940</small></p>
+            <div class="eight columns navigation">
+                <ul>
+                    <li><a href="#allergies">Allergies</a></li>
+                    <li><a href="#conditions">Conditions</a></li>
+                    <li><a href="#labs">Labs</a></li>
+                    <li><a href="#immunizations">Immunizations</a></li>
+                    <li><a href="#medications">Medications</a></li>
+                    <li><a href="#encounters">Encounters</a></li>
+                </ul>
             </div>
-            <div class="six columns">
-                <ul data-magellan-expedition>
-                    <li data-magellan-arrival="allergies"><a href="#allergies">Allergies</a></li>
-                    <li data-magellan-arrival="allergies"><a href="#allergies">Conditions</a></li>
-                    <li data-magellan-arrival="allergies"><a href="#allergies">Vaccinations</a></li>
-                    <li data-magellan-arrival="medications"><a href="#medications">Medications</a></li>
-                    <li data-magellan-arrival="medications"><a href="#medications">Encounters</a></li>
-                    <li data-magellan-arrival="labs"><a href="#labs">Labs</a></li>
+            <div class="four columns accessibility" id="tour-access-links">
+                <ul>
+                    <li class="tour">
+                        <a href="#" title="Take a Tour of protoRx" id="js-tour-page">Tour</a>
+                    </li>
+                    <li id="js-high-contrast">
+                        <a href="#" title="Switch to High Contrast View">High Contrast</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Zoom In" class="icon" id="js-zoom-in">Zoom In</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -39,17 +49,7 @@
     <!-- 00 TOOLHEAD -->
     <section class="toolhead">
         <div class="row">
-            <ul>
-                <li id="access-links">
-                    <a href="#" title="Take a Tour of protoRx" id="js-tour-page"></a>
-                </li>
-                <li>
-                    <a href="#" title="Switch to High Contrast View" id="js-high-contrast"></a>
-                </li>
-                <li>
-                    <a href="#" title="Zoom In" class="icon" id="js-zoom-in"></a>
-                </li>
-            </ul>
+            
         </div>
     </section>
 
@@ -73,7 +73,7 @@
                     </address>
                     <p>
                         503-235-2666<br />
-                        <a href="#">lucy@inter.net</a>
+                        <a href="#">grandmalucy@email.net</a>
                     </p>
                 </div>
             </div>
@@ -100,8 +100,7 @@
     </section>
 
     <!-- 03 ALLERGIES -->
-    <a data-magellan-destination="allergies" name="allergies"></a>
-    <section class="allergies">
+    <section class="allergies" id="allergies">
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
@@ -109,7 +108,7 @@
                 </div>
             </div>
             <div class="listing ten columns lines">
-                <div class="content panel">
+                <div class="content panel" id="tour-allergies">
                     <ul>
                         <li class="alert">
                             <a href="#encounter-5e5eab10-3aaa-11e2-81c1-0800200c9a66" class="line-item">
@@ -130,7 +129,8 @@
         </div>
     </section>
 
-    <section class="conditions">
+    <!-- 04 CONDITIONS -->
+    <section class="conditions" id="conditions">
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
@@ -160,14 +160,29 @@
                 </div>
                 <div class="timeline-event">
                     <div class="timeline-rail">
-                        <span class="timeline-indicator" style="left: 80%"></span>
+                        <span class="timeline-indicator" style="left: 95%"></span>
                     </div>
-                    <a href="#" class="summary">
+                    <a href="#" class="summary" id="tour-conditions">
                         <h3>Ankle Sprain</h3>
-                        <h4>October 31, 2007</h4>
+                        <h4>November 18, 2012</h4>
                     </a>
                     <div class="detail iconed">
                         <p>Slipped on ice and fell.</p>
+                        <p><strong>Associated Encounters: </strong> none</p>
+                        <p><strong>Associated Labs: </strong> none</p>
+                        <p><strong>Associated Medications: </strong> none</p>
+                    </div>
+                </div><!-- /.timeline-event -->
+                <div class="timeline-event">
+                    <div class="timeline-rail">
+                        <span class="timeline-indicator timeline-indicator-stretch" style="left: 80%;width: 20%;"></span>
+                    </div>
+                    <a href="#" class="summary">
+                        <h3>Arthritis</h3>
+                        <h4>October 31, 2007</h4>
+                    </a>
+                    <div class="detail iconed">
+                        <p>Patient experiencing pain and soreness.</p>
                         <p><strong>Associated Encounters: </strong> none</p>
                         <p><strong>Associated Labs: </strong> none</p>
                         <p><strong>Associated Medications: </strong> none</p>
@@ -207,8 +222,8 @@
         </div>
     </section>
 
-    <a data-magellan-destination="labs" name="labs"></a>
-    <section class="labs">
+    <!-- 05 LABS -->
+    <section class="labs" id="labs">
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
@@ -394,7 +409,8 @@
         </div>
     </section>
 
-    <section class="vaccinations">
+    <!-- 06 IMMUNIZATIONS / VACCINATIONS -->
+    <section class="immunizations" id="immunizations">
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
@@ -404,7 +420,7 @@
             <div class="ten column content table">
                 <div class="panel">
 
-                    <table>
+                    <table id="tour-immunizations">
                         <thead>
                             <tr>
                                 <td>Vaccination</td>
@@ -412,6 +428,14 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td class="alert">Influenza (<a href="http://www.cdc.gov/vaccines/vpd-vac/flu/default.htm" target="_blank">?</a>)</td>
+                                <td class="alert">Due Now</td>
+                            </tr>
+                            <tr>
+                                <td class="warn">TD Adult</td>
+                                <td><span class="warn">Due Soon</span>,  9/15/1998</td>
+                            </tr>
                             <tr>
                                 <td>DTP</td>
                                 <td>4/8/1992</td>
@@ -421,24 +445,20 @@
                                 <td>3/12/2001,  10/15/1998,  9/15/1998</td>
                             </tr>
                             <tr>
-                                <td>MMR</td>
+                                <td>MMR (<a href="http://www.cdc.gov/vaccines/pubs/vis/downloads/vis-mmr.pdf" target="_blank">?</a>)</td>
                                 <td>7/30/1996</td>
                             </tr>
                             <tr>
-                                <td>Oral Polio Vaccine</td>
+                                <td>Oral Polio Vaccine (<a href="http://www.cdc.gov/vaccines/vpd-vac/polio/default.htm" target="_blank">?</a>)</td>
                                 <td>4/8/1992</td>
                             </tr>
                             <tr>
-                                <td>Rabies</td>
+                                <td>Rabies (<a href="http://www.cdc.gov/vaccines/vpd-vac/rabies/default.htm" target="_blank">?</a>)</td>
                                 <td>2/28/2007,  2/23/2007,  2/20/2007</td>
                             </tr>
                             <tr>
-                                <td>Rabies IG</td>
+                                <td>Rabies IG (<a href="http://www.cdc.gov/vaccines/vpd-vac/rabies/default.htm" target="_blank">?</a>)</td>
                                 <td>2/20/2007,  2/20/2007,  2/20/2007,  2/20/2007</td>
-                            </tr>
-                            <tr>
-                                <td>TD Adult</td>
-                                <td>1/1/2007,  9/15/1998</td>
                             </tr>
                         </tbody>
                     </table>
@@ -679,7 +699,7 @@ Telephone: 816-276-6909
     <script src="js/foundation.min.js"></script>
     <script src="js/jquery.syncheight.js"></script>
     <script src="js/bootstrap-components.min.js"></script>
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?1"></script>
 
 </body>
 </html>

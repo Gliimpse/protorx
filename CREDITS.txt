@@ -1,0 +1,15 @@
+protoRx includes portions of the following open source third-party libraries and codebases:
+ - CSS and JavaScript
+   - jQuery 1.8.2, MIT license
+   - ZURB Foundation, MIT license
+   - Modernizr 2.6.2, MIT and BSD licenses
+   - jQuery syncHeight 1.2, MIT license
+   - Normalize.css, MIT license
+   - Twitter Bootstrap srollspy/tooltips jQuery plugins, APL v2 license
+ - Typography
+   - Adobe Source Sans Pro, SIL Open Font License (OFL)
+   - Adobe Source Code Pro, SIL Open Font License (OFL)
+ - Iconography
+   - Eye designed by John Caserta from The Noun Project (Creative Commons)
+   - Contrast from the Noun Project (Creative Commons)
+   - Car by Roger Cook & Don Shanosky from the Noun Project (Public Domain)

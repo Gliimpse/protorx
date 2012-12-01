@@ -3,6 +3,9 @@
 	// Trigger tooltips
 	$("[rel=tooltip]").tooltip();
 
+	// scrollSpy
+	$('.navbar').scrollspy();
+
 	$('.graph-horizontal-labels').hide();
 
 	$("#js-tour-page").click(function() {
@@ -13,12 +16,25 @@
 		$('body').css('font-size', '200%');
 	});
 
-	$('#js-high-contrast').click(function() {
-		$('body').addClass('high-contrast');
-	});
+	// HIGH CONTRAST
+	$('body').addClass('regular-contrast');
+	$('.regular-contrast #js-high-contrast a').live(
+		'click', function() {
+			$('body').removeClass('regular-contrast').addClass('high-contrast');
+			$(this).parent().addClass('active');
+			return false;
+		}
+	);
+	$('.high-contrast #js-high-contrast a').live(
+		'click', function() {
+			$('body').addClass('regular-contrast').removeClass('high-contrast');
+			$(this).parent().removeClass('active');
+			return false;
+		}
+	);
 
 	// Show fixed nav bar
-	$(window).scroll(function() {
+/*	$(window).scroll(function() {
 		var scrollPos = $(window).scrollTop();
 		if (scrollPos > 250) {
 			$('.fixed-header').fadeIn();
@@ -26,7 +42,7 @@
 		else {
 			$('.fixed-header').hide();
 		}
-	});
+	});*/
 
 	// Timeline events
 	$('.timeline-event').each(function() {
@@ -85,9 +101,8 @@
 	$('.labs .headline .panel, .labs .content-container').syncHeight();
 	$('.encounters .headline .panel, .encounters .content').syncHeight();
 	$('.medications .headline .panel, .medications .content').syncHeight();
-	$('.vaccinations .headline .panel, .vaccinations .content').syncHeight();
+	$('.immunizations .headline .panel, .immunizations .content').syncHeight();
 	$('.conditions .headline .panel, .conditions .timeline').syncHeight();
-
 	// $(window).resize(function(){
 	// $('p').syncHeight();
 	// });

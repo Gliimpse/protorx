@@ -2,7 +2,6 @@
 - Add scrollspy to page
 - Add print stylesheet
 - Add zoom functionality
-- Add high-contrast functionality
 - Add language
 - Add iconography
 - Finalize tour
@@ -19,14 +18,16 @@
 - Browser test os x firefox esr
 - Browser test os x safari csr
 - Capture screenshots
-- Add license readme markdown
 - important SECTION labs
   - add pos/neg
   - add text only
   - add UA
 - redesign SECTION medications
-- SECTION procedures
 - SECTION care team
 - SECTION legal
+- add action banner in immunizations
 - move icons into sprites
 - rename all the icon libraries into one
+- improve accessibility, keyboard navigation, etc.
+- add flexibility and scaling for timeline (scroll? how does it generate?)
+- add data-* attributes for LOINC, ICD-*, SNOMED CT
