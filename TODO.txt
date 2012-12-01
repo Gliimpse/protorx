@@ -1,8 +1,6 @@
 Before submission:
 	- Add labs with UA, text only, and positive/negative
-	- Redesign medications
 	- Add section care team
-	- Add action banner in immunizations
 	- Add scrollspy to page
 	- Finalize tour
 	- Mobile adjustments

@@ -93,11 +93,8 @@
 	$('.allergies .headline .panel, .allergies .listing').syncHeight();
 	$('.labs .headline .panel, .labs .content-container').syncHeight();
 	$('.encounters .headline .panel, .encounters .content').syncHeight();
-	$('.medications .headline .panel, .medications .content').syncHeight();
+	//$('.medications .headline .panel, .medications .content').syncHeight();
 	$('.immunizations .headline .panel, .immunizations .content').syncHeight();
 	$('.conditions .headline .panel, .conditions .timeline').syncHeight();
-	// $(window).resize(function(){
-	// $('p').syncHeight();
-	// });
 
 }());
