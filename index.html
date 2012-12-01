@@ -38,24 +38,17 @@
                     <li id="js-high-contrast">
                         <a href="#" title="Switch to High Contrast View">High Contrast <span>off</span></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" title="Zoom In" class="icon" id="js-zoom-in">Zoom In</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- 00 TOOLHEAD -->
-    <section class="toolhead">
-        <div class="row">
-            
-        </div>
-    </section>
-
     <!-- 01 NAME -->
     <section class="name">
-        <div class="row">
+        <div class="row" id="tour-patient-name">
             <div class="twelve columns">
                 <h1 id="patient-name">Lucille Désirée Ball</h1>
             </div>
@@ -72,7 +65,7 @@
                         Minneapolis, MN 55404
                     </address>
                     <p>
-                        503-235-2666<br />
+                        202-800-1210<br />
                         <a href="#">grandmalucy@email.net</a>
                     </p>
                 </div>
@@ -97,13 +90,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="eight columns">
-                <div class="panel">
-                    <p><strong>Provided by:</strong> North Memorial Medical Center</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- 03 ALLERGIES -->
@@ -111,11 +97,11 @@
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
-                    <h2>Allergies</h2>
+                    <h2 id="tour-allergies">Allergies</h2>
                 </div>
             </div>
             <div class="listing ten columns lines">
-                <div class="content panel" id="tour-allergies">
+                <div class="content panel">
                     <ul>
                         <li class="alert">
                             <a href="#encounter-5e5eab10-3aaa-11e2-81c1-0800200c9a66" class="line-item">
@@ -318,43 +304,38 @@
                 <!-- Lab Result -->
                 <div class="panel content lab-result closed">
                     <h3>Cholesterol <small>four months ago</small></h3>
-                    <div class="graph-horizontal graph-horizontal-fbs">
-                        <div class="graph-horizontal-labels">
-                            <ul>
-                                <li style="width: 34%;"><strong>Normal</strong>: Fasting blood sugar in this range is normal.</li>
-                                <li style="width: 23%;"><strong>Elevated</strong>: Fasting blood sugar in the range of 101-125 mg/dL is a cause of concern for possible prediabetes and should be monitored.</li>
-                                <li style="width: 43%;"><strong>High</strong>: Fasting blood sugar above 126 mg/dL is an indicator of possible established diabetes.</li>
-                            </ul>
+                    <div class="lab-result-strip">
+                        <div class="lab-result nominal bg" style="width: 33%;">
+                            <h4>Cholesterol</h3>
                         </div>
-                        <span class="graph-horizontal-marker" style="left: 24%;">
-                            <span class="graph-result-label"><strong>152</strong> mg/dL</span>
-                        </span>
-                    </div>
-                    <div class="graph-horizontal graph-horizontal-fbs">
-                        <div class="graph-horizontal-labels">
-                            <ul>
-                                <li style="width: 34%;"><strong>Normal</strong>: Fasting blood sugar in this range is normal.</li>
-                                <li style="width: 23%;"><strong>Elevated</strong>: Fasting blood sugar in the range of 101-125 mg/dL is a cause of concern for possible prediabetes and should be monitored.</li>
-                                <li style="width: 43%;"><strong>High</strong>: Fasting blood sugar above 126 mg/dL is an indicator of possible established diabetes.</li>
-                            </ul>
+                        <div class="lab-result warn bg" style="width: 34%;">
+                            <h4>Triglycerides</h3>
                         </div>
-                        <span class="graph-horizontal-marker" style="left: 24%;">
-                            <span class="graph-result-label"><strong>152</strong> mg/dL</span>
-                        </span>
-                    </div>
-                    <div class="graph-horizontal graph-horizontal-fbs">
-                        <div class="graph-horizontal-labels">
-                            <ul>
-                                <li style="width: 34%;"><strong>Normal</strong>: Fasting blood sugar in this range is normal.</li>
-                                <li style="width: 23%;"><strong>Elevated</strong>: Fasting blood sugar in the range of 101-125 mg/dL is a cause of concern for possible prediabetes and should be monitored.</li>
-                                <li style="width: 43%;"><strong>High</strong>: Fasting blood sugar above 126 mg/dL is an indicator of possible established diabetes.</li>
-                            </ul>
+                        <div class="lab-result nominal bg" style="width: 33%">
+                            <h4>HDL Cholesterol</h3>
                         </div>
-                        <span class="graph-horizontal-marker" style="left: 24%;">
-                            <span class="graph-result-label"><strong>152</strong> mg/dL</span>
-                        </span>
                     </div>
                     <div class="row">
+                        <div class="lab-result-strip interior">
+                            <div class="lab-result" style="width: 33%;">
+                                <div class="lab-result-numbers">
+                                    <strong>152</strong> mg/DL
+                                    <small>Standard Range: 0 - 200 mg/DL</small>
+                                </div>
+                            </div>
+                            <div class="lab-result" style="width: 34%;">
+                                <div class="lab-result-numbers">
+                                    <strong>151</strong> mg/DL
+                                    <small>Standard Range: 0 - 149 mg/DL</small>
+                                </div>
+                            </div>
+                            <div class="lab-result" style="width: 33%">
+                                <div class="lab-result-numbers">
+                                    <strong>43</strong> mg/DL
+                                    <small>Standard Range: 39+ mg/DL</small>
+                                </div>
+                            </div>
+                        </div>
                         <div class="three columns">
                             <div class="panel">
                                 <h4>Trending analysis</h4>
@@ -661,42 +642,8 @@
 
 
 
-    <ol id="joyRideContent" style="display:none">
-        <li data-id="patient-name" data-button="Next">
-            <p>The patient's name is large and easy to read.</p>
-        </li>
-        <li data-id="patient-bio" data-button="Next">
-            <p>Patient demographics, contact information, and room for proprietary provider information.</p>
-        </li>
-        <li data-id="health-boxes" data-button="Next">
-            <p>The most relevant information for the viewer is shown.  Doctors see high-level health information, patients see their next steps to maintain health, or EMTs see blood type, condition codes or a DNR order.</p>
-        </li>
-        <li data-id="access-links" data-button="Next">
-            <p>Accessibility links use simple iconography to allow users to change languages, swap to a high-contrast layout, or zoom to make the text bigger.</p>
-        </li>
-        <li data-id="allergies" data-button="Next">
-            <p>The patient's allergies are shown near the top of the page to alert medical staff and remind the patient to review those allergens for accuracy every time they see their record. Clicking on an allergy will navigate the user to the associated provider encounter.</p>
-        </li>
-        <li data-id="fully-responsive" data-button="Next">
-            <p>protoRx is fully responsive and flexible, and can be viewed on desktop, tablet, and mobile. Try it out!</p>
-        </li>
-        <li data-id="graceful-degradation" data-button="Next">
-            <p>protoRx looks best on modern browsers, but gracefully degrades on legacy browsers. It's been tested for functionality with IE6, IE7, IE8, IE9, Firefox ESR, Safari, Chrome and Opera.</p>
-        </li>
-        <li data-id="print-friendly" data-button="End Tour">
-            <p>protoRx is printer-friendly and is perfectly readable while printed in black and white or color.  Even if printed and later faxed, the document will retain readability.</p>
-        </li>
-    </ol>
 
 <!--
-
-
-
-
-
-
-
-
 
 # Guardian
 Role: Sister
@@ -704,14 +651,6 @@ First Name: Martha
 Last Name: Shan
 Address: 1357 Amber Drive, Beaverton, OR 97006
 Telephone: 816-276-6909
-
-
-
-
-
-
-
-
 
 -->
 
@@ -721,7 +660,33 @@ Telephone: 816-276-6909
         </div>
     </div>
 
-
+    <!-- TOUR -->
+    <ol id="joyRideContent" style="display:none">
+        <li data-id="tour-patient-name" data-button="Next">
+            <p>The patient's name is large and easy to read.</p>
+        </li>
+        <li data-id="tour-patient-bio" data-button="Next">
+            <p>Patient demographics, contact information, and room for proprietary provider information.</p>
+        </li>
+        <li data-id="tour-health-boxes" data-button="Next">
+            <p>The most relevant information for the viewer is shown.  Doctors see high-level health information, patients see their next steps to maintain health, or EMTs see blood type, condition codes or a DNR order.</p>
+        </li>
+        <li data-id="tour-access-links" data-button="Next">
+            <p>Accessibility links use simple iconography to allow users to change languages, swap to a high-contrast layout, or zoom to make the text bigger.</p>
+        </li>
+        <li data-id="tour-allergies" data-button="Next">
+            <p>The patient's allergies are shown near the top of the page to alert medical staff and remind the patient to review those allergens for accuracy every time they see their record. Clicking on an allergy will navigate the user to the associated provider encounter.</p>
+        </li>
+        <li data-id="tour-fully-responsive" data-button="Next">
+            <p>protoRx is fully responsive and flexible, and can be viewed on desktop, tablet, and mobile. Try it out!</p>
+        </li>
+        <li data-id="tour-graceful-degradation" data-button="Next">
+            <p>protoRx looks best on modern browsers, but gracefully degrades on legacy browsers. It's been tested for functionality with IE6, IE7, IE8, IE9, Firefox ESR, Safari, Chrome and Opera.</p>
+        </li>
+        <!-- <li data-id="tour-print-friendly" data-button="End Tour">
+            <p>protoRx is printer-friendly and is perfectly readable while printed in black and white or color.  Even if printed and later faxed, the document will retain readability.</p>
+        </li> -->
+    </ol>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
@@ -729,21 +694,6 @@ Telephone: 816-276-6909
     <script src="js/jquery.syncheight.js"></script>
     <script src="js/bootstrap-components.min.js"></script>
     <script src="js/app.min.js?1"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-    <script>
-        var mapOptions = {
-            zoom: 8,
-            center: new google.maps.LatLng(45.014645,-93.322478),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        map = new google.maps.Map(document.getElementById('providerStreetView'),
-            mapOptions);
-        }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
 
 </body>
 </html>

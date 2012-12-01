@@ -17,6 +17,7 @@ $grey60:		#989898;
 $grey40:		#666666;
 $grey20:		#343434;
 $white:			#ffffff;
+$pink:			#FF00A8;
 
 /* Red 'Alert' colors */
 $alertOff:		#C75144;
@@ -96,14 +97,26 @@ address {
 
 .alert {
 	color: $alertOff;
+	&.bg {
+		background: $alertOff;
+		color: $white;
+	}
 }
 
 .warn {
 	color: $warnOff;
+	&.bg {
+		background: $warnOff;
+		color: $white;
+	}
 }
 
 .nominal {
 	color: $nominalOff;
+	&.bg {
+		background: $nominalOff;
+		color: $white;
+	}
 }
 
 .panel {
@@ -156,7 +169,12 @@ address {
 		li {
 			float: left;
 			&.tour {
-				background: $grey40;
+				background: $blueAqua;
+				a {
+					color: $grey20;
+					font-weight: 900;
+					text-transform: uppercase;
+				}
 			}
 			&.active {
 				background: $black;
@@ -181,6 +199,7 @@ section {
 
 	/* 01 NAME */
 	&.name {
+		margin-top: 60px;
 		h1 {
     		font-family: 'SourceSansPro';
 			font-weight: 100;
@@ -190,6 +209,7 @@ section {
 
 	/* 02 BIO */
 	&.bio {
+		margin-top: 20px;
 		.panel {
 			min-height: 127px;
 			background: $white;
@@ -325,6 +345,37 @@ section {
 					font-size: 1.1em;
 					line-height: 1.3em;
 				}
+			}
+		}
+
+		.lab-result-strip {
+			width: 100%;
+			.lab-result {
+				float: left;
+				display: inline-block;
+				h4 {
+					font-size: 18px;
+					font-weight: 600;
+					padding: 10px 10px 8px 10px;
+				}
+			}
+			&.interior {
+				padding: 0 15px;
+			}
+			.lab-result-numbers {
+				padding: 10px;
+				font-size: 18px;
+				line-height: 1.3em;
+				background: $grey20;
+				color: $white;
+				small {
+					display: block;
+					clear: both;
+					font-size: 13px;
+				}
+			}
+			.graph-vertical-container {
+				
 			}
 		}
 
@@ -669,13 +720,6 @@ section {
 		opacity: 1.0;
 		filter: alpha(opacity=100);
 	}
-	/**, *:before, *:after { 
-		background: none !important; 
-		color: $black !important; 
-	}
-	.columns {
-		border: 1px solid #aaa;
-	}*/
 
 	.headline .panel {
 		background: $white;

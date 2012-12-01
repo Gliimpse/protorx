@@ -1,33 +1,38 @@
-- Create tile content with associated links
-- Add scrollspy to page
-- Add print stylesheet
-- Add zoom functionality
-- Add language
-- Add iconography
-- Finalize tour
-- Browser test win7 ie9
-- Browser test winxp ie8
-- Browser test winxp ie7
-- Browser test winxp ie6
-- Browser test win7 chrome csr
-- Browser test win7 firefox esr
-- Browser test os x firefox csr
-- Browser test os x opera csr
-- Browser test ios ipad safari
-- Browser test ios iphone 4s safari
-- Browser test os x firefox esr
-- Browser test os x safari csr
-- Capture screenshots
-- important SECTION labs
-  - add pos/neg
-  - add text only
-  - add UA
-- redesign SECTION medications
-- SECTION care team
-- SECTION legal
-- add action banner in immunizations
-- move icons into sprites
-- rename all the icon libraries into one
-- improve accessibility, keyboard navigation, etc.
-- add flexibility and scaling for timeline (scroll? how does it generate?)
-- add data-* attributes for LOINC, ICD-*, SNOMED CT
+Before submission:
+	- Add labs with UA, text only, and positive/negative
+	- Redesign medications
+	- Add section care team
+	- Add action banner in immunizations
+	- Add scrollspy to page
+	- Update credits
+	- Add language
+	- Add appropriate licensing information
+	- Finalize tour
+	- Mobile adjustments
+	- Capture screenshots
+
+QA:
+	- Browser test win7 ie9
+	- Browser test winxp ie8
+	- Browser test winxp ie7
+	- Browser test winxp ie6
+	- Browser test win7 chrome csr
+	- Browser test win7 firefox esr
+	- Browser test os x firefox csr
+	- Browser test os x opera csr
+	- Browser test ios ipad safari
+	- Browser test ios iphone 4s safari
+	- Browser test os x firefox esr
+	- Browser test os x safari csr
+
+Short-term:
+	- Add print stylesheet
+	- Move icons into sprites
+	- Limit @font-face to three weights
+
+Medium-term:
+	- Improve accessibility, keyboard navigation, etc.
+	- Add flexibility and scaling for timeline (scroll? how does it generate?)
+
+Long-term:
+	- add data-* attributes for LOINC, ICD-*, SNOMED CT

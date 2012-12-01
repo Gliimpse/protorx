@@ -1,5 +1,9 @@
 (function() {
 
+	// Okay, so... I did this in a rush. It should be rewritten with object literals and functions
+	// that only load when an element exists, etc.  It's on the to-do list after the layout
+	// stops changing.
+
 	// Trigger tooltips
 	$("[rel=tooltip]").tooltip();
 
@@ -35,17 +39,6 @@
 		}
 	);
 
-	// Show fixed nav bar
-/*	$(window).scroll(function() {
-		var scrollPos = $(window).scrollTop();
-		if (scrollPos > 250) {
-			$('.fixed-header').fadeIn();
-		}
-		else {
-			$('.fixed-header').hide();
-		}
-	});*/
-
 	// Timeline events
 	$('.timeline-event').each(function() {
 		$(this).addClass('closed');
@@ -71,8 +64,6 @@
 
 
 	// Expand and collapse lab results
-	// This was done really quickly while layout was changing rapidly
-	// Requires refactoring with object literals and functions
 	$('.lab-result.closed').live(
 		'click', function() {
 			$(this).removeClass('closed').addClass('open');
