@@ -21,6 +21,7 @@ Short-term:
 	- Add print stylesheet
 	- Move icons into sprites
 	- Limit @font-face to three weights
+	- window resizing for heightsync
 
 Medium-term:
 	- Improve accessibility, keyboard navigation, etc.

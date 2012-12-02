@@ -89,7 +89,6 @@
 	);
 
 	// Sync Heights of Columns
-	// @TODO window resize
 	$('.allergies .headline .panel, .allergies .listing').syncHeight();
 	$('.labs .headline .panel, .labs .content-container').syncHeight();
 	$('.encounters .headline .panel, .encounters .content').syncHeight();

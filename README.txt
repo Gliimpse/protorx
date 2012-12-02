@@ -19,4 +19,5 @@ Created in November 2012 for the Health Design Challenge by Tony Webster.
 				https://twitter.com/webster
 				https://linkedin.com/in/tonywebster
 
+Changes, fixes, redesigns, and code improvements welcome.
 See CREDITS.txt, LICENSE.txt and TODO.txt
