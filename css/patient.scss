@@ -515,6 +515,10 @@ section {
 			margin-top: 45px;
 		}
 
+		.graph-horizontal-small {
+			margin-top: 0;
+		}
+
 		.lab-result.closed,
 		.lab-result.open {
 			cursor: pointer;
@@ -774,7 +778,8 @@ section {
 	background: $white;
 }
 
-.graph-horizontal {
+.graph-horizontal,
+.graph-horizontal-small {
 	width: 100%;
 	height: 12px;
 	position: relative;

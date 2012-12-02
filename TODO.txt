@@ -3,24 +3,21 @@ Before submission:
 	- Add section care team
 	- Add scrollspy to page
 	- Finalize tour
-	- Mobile adjustments
 	- Capture screenshots
 
 QA:
-	- Browser test win7 ie9
 	- Browser test winxp ie8
 	- Browser test winxp ie7
 	- Browser test winxp ie6
 	- Browser test win7 chrome csr
 	- Browser test win7 firefox esr
-	- Browser test os x firefox csr
-	- Browser test os x opera csr
 	- Browser test ios ipad safari
 	- Browser test ios iphone 4s safari
 	- Browser test os x firefox esr
 	- Browser test os x safari csr
 
 Short-term:
+	- Mobile adjustments
 	- Add print stylesheet
 	- Move icons into sprites
 	- Limit @font-face to three weights
