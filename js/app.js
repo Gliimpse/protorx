@@ -89,12 +89,12 @@
 	);
 
 	// Sync Heights of Columns
-	$('.allergies .headline .panel, .allergies .listing').syncHeight();
-	$('.labs .headline .panel, .labs .content-container').syncHeight();
-	$('.encounters .headline .panel, .encounters .content').syncHeight();
-	$('.careteam .headline .panel, .careteam .content').syncHeight();
+	// $('.allergies .headline .panel, .allergies .listing').syncHeight();
+	// $('.labs .headline .panel, .labs .content-container').syncHeight();
+	// $('.encounters .headline .panel, .encounters .content').syncHeight();
+	// $('.careteam .headline .panel, .careteam .content').syncHeight();
 	//$('.medications .headline .panel, .medications .content').syncHeight();
-	$('.immunizations .headline .panel, .immunizations .content').syncHeight();
-	$('.conditions .headline .panel, .conditions .timeline').syncHeight();
+	// $('.immunizations .headline .panel, .immunizations .content').syncHeight();
+	// $('.conditions .headline .panel, .conditions .timeline').syncHeight();
 
 }());

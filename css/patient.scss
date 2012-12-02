@@ -310,6 +310,7 @@ section {
 						padding-bottom: 19px;
 						margin-top: -19px;
 						padding-right: 10px;
+						color: $grey20;
 					}
 					.meta {
 						padding: 14px;
@@ -441,6 +442,41 @@ section {
 			font-size: 18px;
 			line-height: 1.2em;
 			font-weight: 600;
+		}
+	}
+
+	/* CARE PLAN */
+	&.careplan {
+		.care-event {
+			clear: both;
+			.cal-date {
+				float: left;
+				width: 25%;
+				padding: 15px;
+				color: $white;
+				font-size: 32px;
+				text-align: center;
+				font-weight: 600;
+				background: $blueSubdued;
+				small {
+					clear: both;
+					display: block;
+					font-weight: 400;
+				}
+			}
+			.cal-detail {
+				padding: 15px;
+				float: left;
+				padding-bottom: 30px;
+
+				h4 {
+					margin-bottom: 6px;
+				}
+				p {
+					font-size: 16px;
+					line-height: 1.4em;
+				}
+			}
 		}
 	}
 
@@ -907,6 +943,7 @@ section {
 	.fixed-header {
 		background: $black;
 	}
+	.joyride-content-wrapper p { color: $white; }
 }
 
 /****************************************************************
