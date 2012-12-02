@@ -1,6 +1,6 @@
 Before submission:
 	- Add labs with UA, text only, and positive/negative
-	- Add section care team
+	- Add section care team and plan
 	- Add scrollspy to page
 	- Finalize tour
 	- Capture screenshots
