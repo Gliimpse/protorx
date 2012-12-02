@@ -1,6 +1,4 @@
 Before submission:
-	- Add labs with UA, text only, and positive/negative
-	- Add section care team and plan
 	- Add scrollspy to page
 	- Finalize tour
 	- Capture screenshots
@@ -22,6 +20,7 @@ Short-term:
 	- Move icons into sprites
 	- Limit @font-face to three weights
 	- window resizing for heightsync
+	- Add labs with text only, and positive/negative
 
 Medium-term:
 	- Improve accessibility, keyboard navigation, etc.

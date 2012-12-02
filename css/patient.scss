@@ -447,6 +447,9 @@ section {
 
 	/* CARE PLAN */
 	&.careplan {
+		.content {
+			padding: 25px;
+		}
 		.care-event {
 			clear: both;
 			.cal-date {
@@ -467,7 +470,7 @@ section {
 			.cal-detail {
 				padding: 15px;
 				float: left;
-				padding-bottom: 30px;
+				padding-bottom: 20px;
 
 				h4 {
 					margin-bottom: 6px;
@@ -482,6 +485,7 @@ section {
 
 	/* CARE TEAM */
 	&.careteam {
+		.content { padding: 25px 40px; }
 		.contact {
 			margin: 25px 0;
 			h4 {
