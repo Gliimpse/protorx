@@ -61,7 +61,7 @@
         <div class="row">
             <div class="five columns">
                 <div class="panel patient-contact">
-                    <address>
+                    <address id="tour-responsive">
                         1314 East Franklin Avenue<br />
                         Minneapolis, MN 55404
                     </address>
@@ -71,7 +71,7 @@
                     </p>
                 </div>
             </div>
-            <div class="three columns" id="patient-bio">
+            <div class="three columns" id="tour-patient-bio">
                 <div class="panel patient-proprietary">
                     <img src="images/fpo-barcode.png" alt="Barcode" class="barcode" />
                     <p>JTTO331613</p>
@@ -128,7 +128,7 @@
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
-                    <h2>Conditions</h2>
+                    <h2 id="tour-conditions">Conditions</h2>
                 </div>
             </div>
 
@@ -222,7 +222,7 @@
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
-                    <h2>Care Team</h2>
+                    <h2 id="tour-careteam">Care Team</h2>
                 </div>
             </div>
                 <div class="contacts ten column">
@@ -250,7 +250,7 @@
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
-                    <h2>Care Plan</h2>
+                    <h2 id="tour-careplan">Care Plan</h2>
                 </div>
             </div>
                 <div class="calendar ten column">
@@ -302,7 +302,7 @@
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
-                    <h2>Labs</h2>
+                    <h2 id="tour-labs">Labs</h2>
                 </div>
             </div>
 
@@ -503,7 +503,7 @@
                         You are due for an influenza immunization, and you are almost due for a Tetanus-diphtheria immunization.  Contact your doctor to schedule these as soon as possible.
                     </div>
 
-                    <table id="tour-immunizations">
+                    <table>
                         <thead>
                             <tr>
                                 <td>Vaccination</td>
@@ -513,7 +513,7 @@
                         <tbody>
                             <tr>
                                 <td class="alert">Influenza (<a href="http://www.cdc.gov/vaccines/vpd-vac/flu/default.htm" target="_blank">?</a>)</td>
-                                <td class="alert">Due Now</td>
+                                <td class="alert" id="tour-immunizations">Due Now</td>
                             </tr>
                             <tr>
                                 <td class="warn">TD Adult</td>
@@ -552,12 +552,11 @@
     </section>
 
 
-
     <section class="medications" id="medications">
         <div class="row">
             <div class="headline two columns">
                 <div class="panel">
-                    <h2>Meds<!--Medications--></h2>
+                    <h2>Meds</h2>
                 </div>
             </div>
 
@@ -571,7 +570,7 @@
                                 <div class="medication-rx">
                                     <h4>Excedrin <small>600mg</small></h4>
                                     <p class="instructions">Take two pills, two times per day.</p>
-                                    <div class="meta">
+                                    <div class="meta" id="tour-meds">
                                         <div class="meta-date">
                                             <small>Prescribed</small> Oct 14, 2012
                                         </div>
@@ -839,7 +838,7 @@
                         </thead>
                         <tbody>
                             <tr id="encounter-9faa1792-928d-40a5-8878-b24d408136e9">
-                                <td>June 22, 2012</td>
+                                <td id="tour-encounters">June 22, 2012</td>
                                 <td>Office Visit</td>
                                 <td>
                                     <strong>Blaisdell Manor Health Services: </strong>Routine general medical examination at a health care facility, Screening for diabetes mellitus with <a href="#">lab glucose</a>, Screening for ischemic heart disease 
@@ -889,9 +888,6 @@
         </div>
     </section>
 
-
-
-
     <div class="row disclaimer">
         <div class="twelve columns">
             <p>protoRx prototype by <a href="https://tonywebster.com" title="Tony Webster | designer / developer" target="_blank">Tony Webster</a></p>
@@ -911,16 +907,34 @@
             <p>The most relevant information for the viewer is shown.  Doctors see high-level health information, patients see their next steps to maintain health, or EMTs see blood type, condition codes or a DNR order.</p>
         </li>
         <li data-id="tour-access-links" data-button="Next">
-            <p>Accessibility links use simple iconography to allow users to change languages, swap to a high-contrast layout, or zoom to make the text bigger.</p>
+            <p>Accessibility options would enable users to switch to a high contrast version for low-vision users, zoom the text to make it larger, or change languages.</p>
         </li>
         <li data-id="tour-allergies" data-button="Next">
             <p>The patient's allergies are shown near the top of the page to alert medical staff and remind the patient to review those allergens for accuracy every time they see their record. Clicking on an allergy will navigate the user to the associated provider encounter.</p>
         </li>
-        <li data-id="tour-fully-responsive" data-button="Next">
-            <p>protoRx is fully responsive and flexible, and can be viewed on desktop, tablet, and mobile.</p>
+        <li data-id="tour-conditions" data-button="Next">
+            <p>The patient's conditions are shown on a timeline. Red charts are active issues, while green ones are resolved.  Clicking on a condition expands to show written details and links to associated encounters, labs and meds.</p>
         </li>
-        <li data-id="tour-graceful-degradation" data-button="Next">
-            <p>protoRx looks best on modern browsers, but gracefully degrades on legacy browsers.</p>
+        <li data-id="tour-careteam" data-button="Next">
+            <p>The patient's care team and their contact information is where everybody can see it.</p>
+        </li>
+        <li data-id="tour-careplan" data-button="Next">
+            <p>A care plan shows upcoming appointments and home care instructions, and has options to add it to an external calendar or send it to a care team.  The clinic could link to driving and transit directions.</p>
+        </li>
+        <li data-id="tour-labs" data-button="Next">
+            <p>Labs show only the high-level statuses until they're clicked on.  Patients can then see which risk category they fall into, physician instructions, and information about the test.</p>
+        </li>
+        <li data-id="tour-immunizations" data-button="Next">
+            <p>Previous vacciations are listed along with alerts about upcoming or past-due immunizations.</p>
+        </li>
+        <li data-id="tour-meds" data-button="Next">
+            <p>Prescriptions include more than just pills -- they're color-coded and with iconography to help patients know how much they need to take.  Refills highlight red when they're getting low.</p>
+        </li>
+        <li data-id="tour-encounters" data-button="Next">
+            <p>A table of encounters has all of the detailed information, with links back to prescriptions and labs, and a patient's next steps highlighted in yellow.</p>
+        </li>
+        <li data-id="tour-responsive" data-button="End Tour"><!-- fix -->
+            <p>protoRx is built using HTML5, CSS3 and JavaScript, so it looks great on modern browsers, but it gracefully degrades for older ones.  It's responsive and can be viewed on desktop, tablet and mobile.  Add in the accessibility features, the ability to add a print stylesheet, and the collaboration of open-source code, and everybody can use protoRx.</p>
         </li>
     </ol>
 
@@ -930,6 +944,21 @@
     <script src="js/jquery.syncheight.js?2"></script>
     <script src="js/bootstrap-components.min.js?2"></script>
     <script src="js/app.min.js?3"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36673574-1']);
+      _gaq.push(['_setDomainName', 'protorx.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 
 </body>
 </html>
